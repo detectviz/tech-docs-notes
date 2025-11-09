@@ -1,0 +1,93 @@
+import UpdateNPM from '@shared/createplugin-update.md';
+
+## 更新至 React Router v6
+
+自 Grafana 10 起，插件可以開始使用 `react-router` 的 v6 版本。總體而言，`react-router` v6 旨在簡化路由設定，並為開發人員提供更靈活、更直觀的 API。
+
+如果您目前的插件版本需要與 Grafana v9 保持相容性，那麼您可以在 Grafana v10 中繼續使用 `react-router@v5`。這兩個版本都適用於插件。但是，**我們強烈建議開發人員盡快更新其插件以使用 v6 版本的 `react-router`**，因為 v5 版本將在 Grafana v11 中棄用，並隨後移除。
+
+有關更多一般資訊，請參閱[官方 React Router v5 至 v6 遷移指南](https://reactrouter.com/en/main/upgrading/v5)。
+
+### 使用 `@grafana/create-plugin` 進行更新
+
+請遵循以下步驟，開始在您的插件中使用 `react-router` v6：
+
+#### 1. 更新與建置相關的設定：
+
+透過在 `<project-root>/.cprc.json` 中設定以下功能旗標來啟用 `react-router@v6` 的使用：
+
+```json title="<project-root>/.cprc.json"
+{
+  "features": {
+    "useReactRouterV6": true
+  }
+}
+```
+
+現在使用 create-plugin 工具更新建置設定：
+
+<UpdateNPM />
+
+更新建置設定後，您可能需要對您的插件進行其他更新。為此，請遵循以下步驟：
+
+#### 2. 使用 `<Routes>` 而非 `<Switch>`
+
+```typescript title="src/Routes.tsx"
+// 在 `react-router` v6 中使用 `<Routes>` 而非 `<Switch>`
+import { Routes } from 'react-router-dom';
+
+// ...
+
+return (
+  <Routes>
+    <Route path="/" element={<Home />} />
+  </Routes>
+);
+```
+
+#### 3. 從 `<Route>` 元件中移除 `exact` prop
+
+```typescript title="src/Routes.tsx"
+return (
+  <Routes>
+    {/* 不好 (v5 之前) */}
+    <Route exact path="/" element={<Home />} />
+
+    {/* 好 (v6 起) */}
+    {/* (路由預設為「精確」，您需要使用「*」來比對子路由) */}
+    <Route path="/" element={<Home />} />
+  </Routes>
+);
+```
+
+#### 4. 使用位置服務方法修正測試失敗
+
+遷移至 React Router v6 後，在使用 `locationService.replace()`、`locationService.push()` 或 `@grafana/runtime` 中的類似方法時，您的測試可能會失敗。請使用 `<LocationServiceProvider />` 元件（在 Grafana 11.2.0 中引入）來解決此問題，以便在您的測試中為位置服務建立一個提供者。
+
+```typescript title="test/test-utils.tsx"
+import { locationService, LocationServiceProvider } from '@grafana/runtime';
+import React, { useEffect, useState } from 'react';
+import { Router } from 'react-router-dom';
+
+const history = locationService.getHistory();
+
+export function TestRoutesProvider({ children }: { children: React.ReactNode }) {
+  const [location, setLocation] = useState(history.location);
+
+  useEffect(() => {
+    history.listen(setLocation);
+  }, []);
+
+  return (
+    <LocationServiceProvider service={locationService}>
+      <Router navigator={history} location={location}>
+        {children}
+      </Router>
+    </LocationServiceProvider>
+  );
+}
+```
+
+#### 5. 遵循原始的 `react-router` 遷移指南以進行更深入的變更
+
+有關更多資訊，請造訪[官方 react-router v5 至 v6 遷移指南](https://reactrouter.com/en/main/upgrading/v5)。

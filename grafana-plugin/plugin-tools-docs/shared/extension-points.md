@@ -1,0 +1,5 @@
+| | **連結** | **元件** |
+| --- | --- | --- |
+| 說明 | 連結具有 `path` 或 `onClick()` 屬性。<br /><br /> **用於...** <br /> 如果您想讓插件為您的 UI 的一部分定義自訂使用者動作，請使用連結。這些動作可以是到插件的交叉連結，或者使用 `onClick()` 方法，它們可以透過強制回應視窗實作更具互動性的頁面內體驗。 | 呈現自訂使用者體驗的 React 元件。<br /><br /> **用於...** <br /> 如果您想讓插件更自由地擴充您的 UI，請使用元件，例如使用自訂部分擴充設定表單。<br /><br /> |
+| API 參考 (內容消費者) | 使用 [`usePluginLinks()`](../reference/ui-extensions-reference/ui-extensions.md#usepluginlinks) 來擷取在擴充點中註冊的連結。 | 使用 [`usePluginComponents()`](../reference/ui-extensions-reference/ui-extensions.md#useplugincomponents) 來擷取在擴充點中註冊的元件。<br /> 使用 [`usePluginComponent()`](../reference/ui-extensions-reference/ui-extensions.md#useplugincomponent) 來使用插件公開的元件。 |
+| API 參考 (內容提供者) | 使用 [`addLink()`](../reference/ui-extensions-reference/ui-extensions.md#addlink) 來註冊一個連結供他人在擴充點中使用。 | 使用 [`addComponent()`](../reference/ui-extensions-reference/ui-extensions.md#addcomponent) 來註冊您插件中的一個元件以在擴充點中呈現。<br /> 使用 [`exposeComponent()`](../reference/ui-extensions-reference/ui-extensions.md#exposecomponent) 來公開您插件中的一個元件。 |

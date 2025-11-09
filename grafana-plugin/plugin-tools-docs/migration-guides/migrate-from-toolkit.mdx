@@ -1,0 +1,112 @@
+---
+id: migrate-from-toolkit
+title: 從 toolkit 遷移
+sidebar_position: 30
+description: 如何將您的 Grafana 插件從 Grafana toolkit 遷移至 create-plugin 工具。
+keywords:
+  - grafana
+  - plugins
+  - plugin
+  - toolkit
+  - Grafana toolkit
+  - migrating
+---
+
+import MigrateNPM from '@shared/createplugin-migrate.md';
+
+`@grafana/toolkit` 工具現已[棄用](https://grafana.com/docs/grafana/next/breaking-changes/breaking-changes-v10-0/#grafanatoolkit-cli-commands-have-been-removed-and-migrated-to-the-create-plugin-package)。如果您仍在使用 `@grafana/toolkit` 來建立和開發插件，請遵循本指南以轉換至我們最新的插件工具。
+
+:::warning
+我們的插件工具使用 ReactJS。我們[不支援](https://grafana.com/docs/grafana/latest/developers/angular_deprecation/)以 Angular 撰寫的插件。
+:::
+
+## 遷移至 `create-plugin` 工具的好處
+
+- **更靈活：** 使用 `create-plugin`，您可以對您的插件及其相依性有更多的控制權。額外的控制權意味著更容易自訂工具以符合您的特定需求。
+- **更快的開發速度：** 憑藉其開箱即用的開發環境，`create-plugin` 與使用 `grafana-toolkit` 相比，可以顯著減少開發時間。
+- **改進的測試能力：** 使用 `create-plugin` GitHub 工作流程輕鬆測試插件，該工作流程會在您每次將變更推送到 GitHub 時自動執行單元和端對端測試。
+- **技術支援：** `grafana-toolkit` 工具已棄用，不再受 Grafana 支援。
+- **更好的文件：** `create-plugin` 的文件比 `grafana-toolkit` 更全面且更容易找到。
+
+## 將您的插件遷移至 create-plugin
+
+1. 備份您目前的所有檔案。我們建議您將插件程式碼儲存在 Git 儲存庫中，並在一個乾淨的分支上執行該指令，以便您可以輕鬆識別遷移指令所做的變更。
+
+2. 在現有插件的根目錄（`package.json` 檔案所在的位置）中，執行以下指令。
+
+<MigrateNPM />
+
+3. 遵循出現的提示。有關每個潛在提示的詳細資訊，請參閱下面的列表。
+
+## 提示
+
+執行 `migrate` 指令時，會出現以下提示。由於其破壞性，提示的預設值為 `no`。
+
+### 以下檔案將被覆寫。您要繼續嗎？
+
+選取 `y` 以取代插件目錄中的以下檔案和資料夾，或如果它們不存在則建立它們：
+
+```
+myplugin-directory/
+├── .config/
+├── .eslintrc
+├── .nvmrc
+├── .prettierrc.js
+├── docker-compose.yaml
+├── jest-setup.js
+├── jest.config.js
+└── tsconfig.json
+```
+
+### 以下檔案是必要的。我們可以為您建立它們嗎？
+
+選取 `y` 以確保插件目錄中存在 `CHANGELOG.md` 檔案。
+
+### 以下檔案可能不再需要。您同意我們移除它們嗎？
+
+選取 `y` 以刪除插件目錄中的以下檔案和資料夾：
+
+```
+myplugin-directory/
+├── Dockerfile
+├── docker-compose.yml
+├── webpack/
+├── .webpack/
+└── .prettierrc
+```
+
+### 您想更新 package.json 中的以下相依性嗎？
+
+選取 `y` 以更新提示列出的所有 npm 相依性。該指令刻意避免更新 `@grafana` npm 相依性，以減少遷移期間的潛在摩擦。
+
+### 您想移除以下可能不必要的 NPM 相依性嗎？
+
+選取 `y` 以刪除 `package.json` 中找到的以下 npm 相依性：
+
+```diff json
+{
+  "devDependencies": {
+-   "ts-loader": "*",
+-   "babel-loader": "*",
+-   "@grafana/toolkit": "*"
+  }
+}
+```
+
+### 您想更新 package.json 中的腳本嗎？所有使用 `grafana-toolkit` 的腳本都將被取代。
+
+此步驟會更新 `package.json` 檔案中的任何 npm 腳本，以符合最新的設定。先前使用 `grafana-toolkit` 的任何腳本都會被取代。
+
+## 後續步驟
+
+遷移指令執行完畢後，請遵循以下步驟：
+
+1. 檢查所引入的變更，然後安裝前端相依性。
+
+2. 執行 `package.json` 內的每個 npm 腳本，以確認插件可以被建置、測試和簽署。
+
+如果插件對 toolkit 設定（例如 webpack）有自訂，請參閱[擴充設定](/how-to-guides/extend-configuration.md)以了解如何更新它們。
+
+如果插件可以建置，但 Jest 測試有問題，請參閱有關 es 模組的 [Jest 疑難排解](/troubleshooting.md#i-get-syntaxerror-cannot-use-import-statement-outside-a-module-when-running-jest-or-npm-run-test)部分。
+
+如需其他問題的協助，請在 [Slack](https://grafana.slack.com/) 或[社群論壇](https://community.grafana.com/c/plugin-development/30)上與我們聯繫。

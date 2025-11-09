@@ -1,0 +1,108 @@
+---
+id: cli-commands
+title: 用於建立插件的 CLI 指令
+description: create-plugin 工具中可用的指令。
+keywords:
+  - grafana
+  - plugins
+  - plugin
+  - create-plugin
+  - prompts
+  - commands
+sidebar_position: 40
+---
+
+import ScaffoldNPM from '@shared/createplugin-scaffold.md';
+import UpdateNPM from '@shared/createplugin-update.md';
+import UpdateForceNPM from '@shared/createplugin-update-force.md';
+
+# CLI 指令
+
+您可以在下方找到 `@grafana/create-plugin` 中可用的指令。
+
+## create-plugin
+
+使用 `create-plugin` 指令來建立您的插件。
+
+<ScaffoldNPM />
+
+
+執行 `create-plugin` 指令時，會出現以下提示：
+
+### 選取插件類型
+
+```
+? Select a plugin type …
+❯ App (add custom pages, UI extensions and bundle other plugins)
+  Data source (query data from a custom source)
+  Panel (add a visualization for data or a widget)
+  App with Scenes (create dynamic dashboards in app pages)
+```
+
+若要深入了解各種插件類型，請參閱[Grafana 插件類型與用法](../key-concepts/plugin-types-usage.md)。
+
+有關 Scenes 如何讓您在應用程式插件中建立類似儀表板的體驗的更多資訊，請參閱 [Scenes](https://grafana.com/developers/scenes) 文件。
+
+### 新增後端以支援伺服器端功能？ (y/N)
+
+如果您正在建立應用程式或資料來源插件，系統會詢問您是否要額外新增後端元件。
+
+插件後端元件提供了強大的功能，例如：
+
+- 為資料來源啟用 [Grafana 警示](https://grafana.com/docs/grafana/latest/alerting/)。
+- 連線到通常無法從瀏覽器連線的非 HTTP 服務。例如，SQL 資料庫伺服器。
+- 在使用者之間保持狀態。例如，資料來源的查詢快取。
+- 使用 Grafana 不支援的自訂驗證方法和/或授權檢查。
+- 使用自訂資料來源請求代理。
+
+若要深入了解，請參閱[插件後端元件](../key-concepts/backend-plugins/index.md)。
+
+### 為您的插件輸入名稱
+
+為您的插件取一個有助於識別其用途的名稱。
+
+### 輸入您的組織名稱（通常是您的 Grafana Cloud 組織）
+
+輸入您的組織名稱。這必須是您的 [Grafana Cloud](https://grafana.com/signup/) 組織。有了組織名稱，您可以[簽署](../publish-a-plugin/sign-a-plugin.md)並選擇性地將插件[發布](../publish-a-plugin/publish-or-update-a-plugin.md)至 [Grafana 插件目錄](https://grafana.com/grafana/plugins)。
+
+### 略過提示
+
+您可以使用 `create-plugin` CLI 引數來略過所有先前的提示。
+若要使用 CLI 引數來建立插件，請將它們傳遞給 `create-plugin` 指令，如下所示：
+
+```
+npx @grafana/create-plugin \
+  --plugin-type="app" \
+  --plugin-name="myPlugin" \
+  --org-name="myorg" \
+  --backend
+```
+
+您可以使用 CLI 引數來建立插件以加快上手速度。使用引數還可讓您在非互動式環境（例如 CI）中執行該工具，或使用其他工具來建立插件。
+
+有關完整的提示略過選項列表，請參閱下表：
+
+| 提示 | 對等的引數名稱 | 值 |
+| --- | --- | --- |
+| **插件類型** | `--plugin-type` | `app`、`datasource`、`panel` 或 `scenesapp` 其中之一 |
+| **後端** | `--backend` / `--no-backend` | 布林值 |
+| **名稱** | `--plugin-name` | 字串 |
+| **組織** | `--org-name` | 字串 |
+
+
+## update
+
+若要更新現有插件以使用最新版的 `create-plugin` 工具，請從您的插件根目錄執行以下指令：
+
+<UpdateNPM />
+
+此指令會更新以下內容：
+* **`/.config`** - 用於建置插件的設定檔
+* **NPM 相依性** - 相依性（主要用於支援最新的 Grafana 版本和建置更新）
+* **NPM 腳本** - 任何與建置相關的腳本更新
+
+### update --force
+
+預設情況下，如果儲存庫中有任何未提交的變更，`update` 指令將會停止。如果您想強制更新，可以使用 `--force` 旗標：
+
+<UpdateForceNPM />
