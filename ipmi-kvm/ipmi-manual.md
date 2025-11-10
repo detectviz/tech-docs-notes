@@ -5,362 +5,333 @@
 **Pro WS**  
 
 **W680-ACE IPMI**  
-**Motherboard**   
+**主機板**
 E21247   
-First Edition   
-October 2022 
+初版
+2022 年 10 月
 
-**Copyright © 2022 ASUSTeK COMPUTER INC. All Rights Reserved.**   
-No part of this manual, including the products and software described in it, may be reproduced,  transmitted, transcribed, stored in a retrieval system, or translated into any language in any form or by  any means, except documentation kept by the purchaser for backup purposes, without the express  written permission of ASUSTeK COMPUTER INC. (“ASUS”).   
-Product warranty or service will not be extended if: (1) the product is repaired, modified or altered, unless  such repair, modification of alteration is authorized in writing by ASUS; or (2) the serial number of the  product is defaced or missing.   
-ASUS PROVIDES THIS MANUAL “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS  OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OR CONDITIONS OF  MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT SHALL ASUS, ITS  DIRECTORS, OFFICERS, EMPLOYEES OR AGENTS BE LIABLE FOR ANY INDIRECT, SPECIAL,  INCIDENTAL, OR CONSEQUENTIAL DAMAGES (INCLUDING DAMAGES FOR LOSS OF PROFITS,  LOSS OF BUSINESS, LOSS OF USE OR DATA, INTERRUPTION OF BUSINESS AND THE LIKE),  EVEN IF ASUS HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES ARISING FROM  ANY DEFECT OR ERROR IN THIS MANUAL OR PRODUCT.   
-SPECIFICATIONS AND INFORMATION CONTAINED IN THIS MANUAL ARE FURNISHED FOR  INFORMATIONAL USE ONLY, AND ARE SUBJECT TO CHANGE AT ANY TIME WITHOUT NOTICE,  AND SHOULD NOT BE CONSTRUED AS A COMMITMENT BY ASUS. ASUS ASSUMES NO  RESPONSIBILITY OR LIABILITY FOR ANY ERRORS OR INACCURACIES THAT MAY APPEAR IN  THIS MANUAL, INCLUDING THE PRODUCTS AND SOFTWARE DESCRIBED IN IT. Products and corporate names appearing in this manual may or may not be registered trademarks or  copyrights of their respective companies, and are used only for identification or explanation and to the  owners’ benefit, without intent to infringe.
+**版權所有 © 2022 ASUSTeK COMPUTER INC. 保留所有權利。**
+本手冊的任何部分，包括其中描述的產品和軟體，均不得以任何形式或任何方式複製、傳播、轉錄、儲存在檢索系統中或翻譯成任何語言，除非購買者為備份目的保留文件，未經 ASUSTeK COMPUTER INC. (“ASUS”) 明確書面許可。
+如果出現以下情況，產品保固或服務將不予延長：(1) 產品被修理、修改或變更，除非此類修理、修改或變更已獲得華碩書面授權；或 (2) 產品序號被塗改或遺失。
+華碩「按原樣」提供本手冊，不提供任何明示或暗示的保證，包括但不限於對適銷性或特定用途適用性的暗示保證或條件。在任何情況下，華碩、其董事、管理人員、員工或代理人均不對任何間接、特殊、附帶或後果性損害（包括利潤損失、業務損失、使用或資料損失、業務中斷等損害）負責，即使華碩已被告知本手冊或產品中任何缺陷或錯誤可能導致此類損害。
+本手冊中包含的規格和資訊僅供參考，隨時可能更改，恕不另行通知，且不應被解釋為華碩的承諾。華碩對本手冊（包括其中描述的產品和軟體）中可能出現的任何錯誤或不準確之處不承擔任何責任。本手冊中出現的產品和公司名稱可能是也可能不是其各自公司的註冊商標或版權，僅用於識別或解釋，並為所有者帶來利益，無意侵權。
 
 ii   
-**Contents** 
+**目錄**
 
-**Safety information....................................................................................................... v About this guide......................................................................................................... vi Pro WS W680-ACE specifications summary .......................................................... vii Package contents...................................................................................................... xii** 
+**安全資訊....................................................................................................... v 關於本指南......................................................................................................... vi Pro WS W680-ACE 規格摘要 .......................................................... vii 包裝內容...................................................................................................... xii**
 
-**Chapter 1: Product Introduction** 
+**第 1 章：產品介紹**
 
-**1.1 Before you proceed ...................................................................................1-1 1.2 Motherboard layout....................................................................................1-2** 
+**1.1 開始之前 ...................................................................................1-1 1.2 主機板佈局....................................................................................1-2**
 
-**Chapter 2: Basic Installation** 
+**第 2 章：基本安裝**
 
-**2.1 Building your PC system...........................................................................2-1** 2.1.1 CPU installation...........................................................................2-1 2.1.2 Cooling system installation..........................................................2-3 2.1.3 DIMM installation.........................................................................2-6 2.1.4 M.2 installation ............................................................................2-7 2.1.5 Motherboard installation............................................................2-13 2.1.6 ATX power connection..............................................................2-14 2.1.7 SATA device connection...........................................................2-16 2.1.8 SlimSAS connection..................................................................2-16 2.1.9 Front I/O connector...................................................................2-17 2.1.10 Expansion card installation .......................................................2-18 2.1.11 M.2 Wi-Fi module and antenna installation...............................2-20 
+**2.1 組建您的個人電腦系統...........................................................................2-1** 2.1.1 CPU 安裝...........................................................................2-1 2.1.2 散熱系統安裝..........................................................2-3 2.1.3 DIMM 安裝.........................................................................2-6 2.1.4 M.2 安裝 ............................................................................2-7 2.1.5 主機板安裝............................................................2-13 2.1.6 ATX 電源連接..............................................................2-14 2.1.7 SATA 裝置連接...........................................................2-16 2.1.8 SlimSAS 連接..................................................................2-16 2.1.9 前置 I/O 連接器...................................................................2-17 2.1.10 擴充卡安裝 .......................................................2-18 2.1.11 M.2 Wi-Fi 模組與天線安裝...............................2-20
 
-**2.2 BIOS update utility...................................................................................2-21 2.3 Motherboard rear and audio connections .............................................2-23** 2.3.1 Rear I/O connection ..................................................................2-23 2.3.2 Audio I/O connections...............................................................2-25 **2.4 Starting up for the first time....................................................................2-27 2.5 Turning off the computer ........................................................................2-27** 
+**2.2 BIOS 更新公用程式...................................................................................2-21 2.3 主機板後方與音訊連接 .............................................2-23** 2.3.1 後方 I/O 連接 ..................................................................2-23 2.3.2 音訊 I/O 連接...............................................................2-25 **2.4 首次啟動....................................................................2-27 2.5 關閉電腦 ........................................................................2-27**
 
-**Chapter 3: BIOS and RAID Support** 
+**第 3 章：BIOS 與 RAID 支援**
 
-**3.1 Knowing BIOS ............................................................................................3-1 3.2 BIOS setup program ..................................................................................3-2 3.3 ASUS EZ Flash 3 ........................................................................................3-3 3.4 ASUS CrashFree BIOS 3............................................................................3-4 3.5 RAID configurations ..................................................................................3-5**
+**3.1 認識 BIOS ............................................................................................3-1 3.2 BIOS 設定程式 ..................................................................................3-2 3.3 華碩 EZ Flash 3 ........................................................................................3-3 3.4 華碩 CrashFree BIOS 3............................................................................3-4 3.5 RAID 組態 ..................................................................................3-5**
 
 iii   
-**Appendix** 
+**附錄**
 
-**Q-Code table............................................................................................................ A-1 Notices .................................................................................................................... A-5 Warranty................................................................................................................. A-10 ASUS contact information.................................................................................... A-12 Service and Support ............................................................................................. A-12**
+**Q-Code 表............................................................................................................ A-1 注意事項 .................................................................................................................... A-5 保固................................................................................................................. A-10 華碩聯絡資訊.................................................................................... A-12 服務與支援 ............................................................................................. A-12**
 
 iv   
-**Safety information** 
+**安全資訊**
 
-**Electrical safety** 
+**電氣安全**
 
-• To prevent electrical shock hazard, disconnect the power cable from the electrical  outlet before relocating the system. 
+• 為防止觸電危險，在重新安置系統前，請從電源插座拔下電源線。
 
-• When adding or removing devices to or from the system, ensure that the power cables  for the devices are unplugged before the signal cables are connected. If possible,  disconnect all power cables from the existing system before you add a device. 
+• 在向系統新增或移除裝置時，請確保在連接訊號線之前，已拔下裝置的電源線。如果可能，在新增裝置前，請先拔下現有系統的所有電源線。
 
-• Before connecting or removing signal cables from the motherboard, ensure that all  power cables are unplugged. 
+• 在連接或移除主機板的訊號線之前，請確保所有電源線均已拔下。
 
-• Seek professional assistance before using an adapter or extension cord. These  devices could interrupt the grounding circuit. 
+• 在使用轉接器或延長線之前，請尋求專業協助。這些裝置可能會中斷接地電路。
 
-• Ensure that your power supply is set to the correct voltage in your area. If you are not  sure about the voltage of the electrical outlet you are using, contact your local power  company. 
+• 請確保您的電源供應器設定為您所在地區的正確電壓。如果您不確定所用電源插座的電壓，請聯繫您當地的電力公司。
 
-• If the power supply is broken, do not try to fix it by yourself. Contact a qualified service  technician or your retailer. 
+• 如果電源供應器損壞，請勿自行修理。請聯繫合格的維修技術人員或您的零售商。
 
-**Operation safety** 
+**操作安全**
 
-• Before installing the motherboard and adding devices on it, carefully read all the  manuals that came with the package. 
+• 在安裝主機板並在其上新增裝置之前，請仔細閱讀包裝內的所有手冊。
 
-• Before using the product, ensure all cables are correctly connected and the power  cables are not damaged. If you detect any damage, contact your dealer immediately. 
+• 使用產品前，請確保所有纜線均已正確連接，且電源線未損壞。如果發現任何損壞，請立即聯繫您的經銷商。
 
-• To avoid short circuits, keep paper clips, screws, and staples away from connectors,  slots, sockets and circuitry. 
+• 為避免短路，請將迴紋針、螺絲和釘書針遠離連接器、插槽、插座和電路。
 
-• Avoid dust, humidity, and temperature extremes. Do not place the product in any area  where it may become wet. 
+• 避免灰塵、濕度和極端溫度。請勿將產品放置在任何可能變濕的區域。
 
-• Place the product on a stable surface. 
+• 將產品放置在穩定的表面上。
 
-• If you encounter technical problems with the product, contact a qualified service  technician or your retailer. 
+• 如果您遇到產品的技術問題，請聯繫合格的維修技術人員或您的零售商。
 
-• Your motherboard should only be used in environments with ambient temperatures  between 0°C and 40°C. 
+• 您的主機板只能在環境溫度介於 0°C 至 40°C 的環境中使用。
 
-**Button/Coin Batteries Safety Information**
+**鈕扣/硬幣電池安全資訊**
 
 **![][image1]**
 
-| WARNING  KEEP OUT OF REACH OF CHILDREN Swallowing can lead to chemical burns,  perforation of soft tissue, and death. Severe  burns can occur within 2 hours of ingestion.  Seek medical attention immediately. |  |
+| 警告  請將本產品放在兒童無法觸及的地方 吞嚥可能導致化學灼傷、軟組織穿孔和死亡。嚴重灼傷可在攝入後 2 小時內發生。請立即就醫。 |  |
 | ----- | :---- |
 
 v   
-**About this guide** 
+**關於本指南**
 
-This user guide contains the information you need when installing and configuring the  motherboard. 
+本使用者指南包含您在安裝和設定主機板時所需的資訊。
 
-**How this guide is organized** 
+**本指南的組織方式**
 
-This guide contains the following parts: 
+本指南包含以下部分：
 
-**• Chapter 1: Product Introduction** 
+**• 第 1 章：產品介紹**
 
-This chapter describes the features of the motherboard and the new technology it  supports. It includes description of the switches, jumpers, and connectors on the  motherboard. 
+本章介紹主機板的功能及其支援的新技術。其中包含主機板上的開關、跳線和連接器的說明。
 
-**• Chapter 2: Basic Installation** 
+**• 第 2 章：基本安裝**
 
-This chapter lists the hardware setup procedures that you have to perform when  installing system components. 
+本章列出您在安裝系統組件時必須執行的硬體設定程序。
 
-**• Chapter 3: BIOS and RAID Support** 
+**• 第 3 章：BIOS 與 RAID 支援**
 
-This chapter tells how to boot into the BIOS, upgrade BIOS using the EZ Flash Utility  and support on RAID. 
+本章告訴您如何進入 BIOS、使用 EZ Flash 公用程式更新 BIOS 以及 RAID 支援。
 
-**Where to find more information** 
+**哪裡可以找到更多資訊**
 
-Refer to the following sources for additional information and for product and software  updates. 
+請參閱以下來源以取得更多資訊以及產品和軟體更新。
 
-**1---. ASUS website** 
+**1---. 華碩網站**
 
-The ASUS website (www.asus.com) provides updated information on ASUS hardware  and software products. 
+華碩網站 (www.asus.com) 提供華碩硬體和軟體產品的最新資訊。
 
-**2---. Optional documentation** 
+**2---. 選用文件**
 
-Your product package may include optional documentation, such as warranty flyers,  that may have been added by your dealer. These documents are not part of the  standard package. 
+您的產品包裝中可能包含選用文件，例如保固傳單，這些文件可能是您的經銷商新增的。這些文件不屬於標準包裝的一部分。
 
-**Conventions used in this guide** 
+**本指南中使用的慣例**
 
-To ensure that you perform certain tasks properly, take note of the following symbols used  throughout this user guide. 
+為確保您正確執行某些任務，請注意本使用者指南中使用的以下符號。
 
-**CAUTION:** Information to prevent damage to the components and injuries to  yourself when trying to complete a task. 
+**注意：** 完成任務時防止損壞組件和自身受傷的資訊。
 
-**IMPORTANT:** Instructions that you MUST follow to complete a task. 
+**重要：** 您必須遵循才能完成任務的說明。
 
-**NOTE:** Tips and additional information to help you complete a task.
+**注意：** 協助您完成任務的提示和附加資訊。
 
 vi   
-**Pro WS W680-ACE specifications summary** 
+**Pro WS W680-ACE 規格摘要**
 
-| CPU | Intel® Socket LGA1700 for 13th Gen Intel® Core™ Processors & 12th Gen Intel® Core™, Pentium® Gold and Celeron® Processors  Supports Intel® Turbo Boost Technology 2.0 and Intel® Turbo Boost Max  Technology 3.0---*---*  ---* Refer to www.asus.com for CPU support list.  ---*---* Intel® Turbo Boost Max Technology 3.0 support depends on the CPU types. |
+| CPU | Intel® Socket LGA1700 適用於第 13 代 Intel® Core™ 處理器和第 12 代 Intel® Core™、Pentium® Gold 和 Celeron® 處理器  支援 Intel® Turbo Boost Technology 2.0 和 Intel® Turbo Boost Max Technology 3.0---*---*  ---* 有關 CPU 支援清單，請參閱 www.asus.com。  ---*---* Intel® Turbo Boost Max Technology 3.0 支援情況視 CPU 類型而定。 |
 | :---- | ----- |
-| **Chipset**  | Intel® W680 Chipset |
-| **Memory**  | 4 x DIMM, Max. 128GB, DDR5 6000(OC) / 5800(OC) / 5600(OC) / 5400(OC) / 5200(OC) / 5000(OC) / 4800 Non-ECC, Un-buffered  Memory---*  4 x DIMM, Max. 128GB, DDR5 4800 ECC Memory  Dual Channel Memory Architecture  Supports Intel® Extreme Memory Profile (XMP)  OptiMem II  **---* Supported memory types, data rate(Speed), and number of DRAM modules  vary depending on the CPU and memory configuration, for more information  refer to www.asus.com for memory support list.  ---* Non-ECC, un-buffered DDR5 memory supports On-Die ECC function.** |
-| **Graphics** | 1 x DisplayPort---*---* 1 x HDMI® port---*---*---*  1 x VGA port   **---* Graphics specifications may vary between CPU types. Please refer to  www.intel.com for any updates.  ---*---* Supports max. 8K@60Hz as specified in DisplayPort 1.4.  ---*---*---* Supports 4K@60Hz as specified in HDMI 2.1.** |
-| **Expansion Slots** | **Intel® 13th & 12th Gen Processors---***  ---- 2 x PCIe 5.0 x16 slots (support x16 or x8/x8 mode)  **Intel® W680 Chipset**   ---- 2 x PCIe 3.0 x16 slots (supports x4 mode)   ---- 1 x PCIe 3.0 x1 slot  **---* Please check the PCIe bifurcation table at the support site   (https://www.asus.com/support/FAQ/1037507/).**  To ensure compatibility of the device installed, please   refer to https://www.asus.com/support/ for the list of   supported peripherals. |
-| **Storage** | **Total supports 3 x M.2 slots and 8 x SATA 6Gb/s ports---*Intel® 13th & 12th Gen Processors**   ---- M.2---_1 slot (Key M), type 2242/2260/2280 (supports PCIe 4.0 x4 mode) |
+| **晶片組**  | Intel® W680 晶片組 |
+| **記憶體**  | 4 x DIMM，最大 128GB，DDR5 6000(OC) / 5800(OC) / 5600(OC) / 5400(OC) / 5200(OC) / 5000(OC) / 4800 非 ECC、無緩衝記憶體---*  4 x DIMM，最大 128GB，DDR5 4800 ECC 記憶體  雙通道記憶體架構  支援 Intel® Extreme Memory Profile (XMP)  OptiMem II  **---* 支援的記憶體類型、資料速率（速度）和 DRAM 模組數量因 CPU 和記憶體組態而異，如需更多資訊，請參閱 www.asus.com 的記憶體支援清單。  ---* 非 ECC、無緩衝 DDR5 記憶體支援晶片上 ECC 功能。** |
+| **顯示卡** | 1 個 DisplayPort---*---* 1 個 HDMI® 連接埠---*---*---*  1 個 VGA 連接埠   **---* 顯示卡規格可能因 CPU 類型而異。如有任何更新，請參閱 www.intel.com。  ---*---* 支援 DisplayPort 1.4 中指定的最高 8K@60Hz。  ---*---*---* 支援 HDMI 2.1 中指定的 4K@60Hz。** |
+| **擴充插槽** | **Intel® 第 13 代與第 12 代處理器---***  ---- 2 個 PCIe 5.0 x16 插槽 (支援 x16 或 x8/x8 模式)  **Intel® W680 晶片組**   ---- 2 個 PCIe 3.0 x16 插槽 (支援 x4 模式)   ---- 1 個 PCIe 3.0 x1 插槽  **---* 請查看支援網站上的 PCIe 分岔表 (https://www.asus.com/support/FAQ/1037507/)。**  為確保所安裝裝置的相容性，請參閱 https://www.asus.com/support/ 取得支援的周邊設備清單。 |
+| **儲存** | **總共支援 3 個 M.2 插槽和 8 個 SATA 6Gb/s 連接埠---*Intel® 第 13 代與第 12 代處理器**   ---- M.2\_1 插槽 (Key M)，類型 2242/2260/2280 (支援 PCIe 4.0 x4 模式) |
 
-(continued on the next page)
+(續下頁)
 
 vii   
-**Pro WS W680-ACE specifications summary** 
+**Pro WS W680-ACE 規格摘要**
 
-| Storage | Intel® W680 Chipset   ---- M.2---_2 slot (Key M), type 2242/2260/2280 (supports PCIe 4.0 x4 mode)  ---- M.2---_3 slot (Key M), type 2242/2260/2280/22110   (supports PCIe 4.0 x4 mode)   ---- 4 x SATA 6Gb/s ports   ---- 1 x SlimSAS Slot Support SlimSAS NVMe device (supports PCIe 4.0  x4 mode), up to 4 SATA devices---*---*---*  ---* Intel® Rapid Storage Technology supports PCIe RAID 0/1/5/10, SATA RAID  0/1/5/10.  ---*---* Intel® Rapid Storage Technology supports Intel® Optane Memory H Series  on PCH attached M.2 slots.  ---*---*---* SlimSAS slot can support up to 4 SATA devices via a transfer cable. The  cable is purchased separately. |
+| 儲存 | Intel® W680 晶片組   ---- M.2\_2 插槽 (Key M)，類型 2242/2260/2280 (支援 PCIe 4.0 x4 模式)  ---- M.2\_3 插槽 (Key M)，類型 2242/2260/2280/22110   (支援 PCIe 4.0 x4 模式)   ---- 4 個 SATA 6Gb/s 連接埠   ---- 1 個 SlimSAS 插槽 支援 SlimSAS NVMe 裝置 (支援 PCIe 4.0 x4 模式)，最多 4 個 SATA 裝置---*---*---*  ---* Intel® 快速儲存技術支援 PCIe RAID 0/1/5/10、SATA RAID 0/1/5/10。  ---*---* Intel® 快速儲存技術支援 PCH 連接 M.2 插槽上的 Intel® Optane Memory H 系列。  ---*---*---* SlimSAS 插槽可透過傳輸線支援最多 4 個 SATA 裝置。傳輸線需另行購買。 |
 | ----- | :---- |
-| **Ethernet** | 2 x Intel® 2.5Gb Ethernet ASUS LANGuard |
-| **Wireless & Bluetooth®**  | M.2 slot only (Key E, CNVi & PCIe)---***---* Wi-Fi module is sold separately.** |
-| **USB** | **Rear USB (Total 8 ports)**  ---- 2 x USB 3.2 Gen 2 ports (1 x Type-A, 1 x Type-C®)   ---- 4 x USB 3.2 Gen 1 ports (4 x Type-A)   ---- 2 x USB 2.0 ports (2 x Type-A)  **Front USB (Total 7 ports)**   ---- 1 x USB 3.2 Gen 2x2 connector (supports USB Type-C®)  ---- 1 x USB 3.2 Gen 1 header supports additional 2 USB 3.2 Gen 1 ports  ---- 2 x USB 2.0 headers support additional 4 USB 2.0 ports |
-| **Audio** | **Realtek 7.1 Surround Sound High Definition Audio CODEC** ---- Supports: Jack-detection, Multi-streaming, Front Panel Jack-retasking  ---- Supports up to 24-Bit/192 kHz playback  **Audio Features**   ---- Audio Shielding   ---- Premium audio capacitors   ---- Dedicated audio PCB layers   ---- Unique de-pop circuit |
-| **Back Panel I/O Ports**  | 2 x USB 3.2 Gen 2 ports (1 x Type-A, 1 x Type-C®) 4 x USB 3.2 Gen 1 ports (4 x Type-A)  2 x USB 2.0 ports (2 x Type-A)  1 x DisplayPort  1 x HDMI® port  1 x VGA port  2 x Intel® 2.5Gb Ethernet ports  5 x Audio jacks  1 x BIOS FlashBack™ button |
+| **乙太網路** | 2 個 Intel® 2.5Gb 乙太網路 華碩 LANGuard |
+| **無線與藍牙®**  | 僅限 M.2 插槽 (Key E, CNVi & PCIe)---***---* Wi-Fi 模組需另行購買。** |
+| **USB** | **後置 USB (共 8 個連接埠)**  ---- 2 個 USB 3.2 Gen 2 連接埠 (1 個 Type-A，1 個 Type-C®)   ---- 4 個 USB 3.2 Gen 1 連接埠 (4 個 Type-A)   ---- 2 個 USB 2.0 連接埠 (2 個 Type-A)  **前置 USB (共 7 個連接埠)**   ---- 1 個 USB 3.2 Gen 2x2 連接器 (支援 USB Type-C®)  ---- 1 個 USB 3.2 Gen 1 接頭支援額外 2 個 USB 3.2 Gen 1 連接埠  ---- 2 個 USB 2.0 接頭支援額外 4 個 USB 2.0 連接埠 |
+| **音訊** | **Realtek 7.1 環繞音效高傳真音訊編解碼器** ---- 支援：插孔偵測、多重串流、前面板插孔重新分配  ---- 支援高達 24 位元/192 kHz 播放  **音訊功能**   ---- 音訊屏蔽   ---- 優質音訊電容   ---- 專用音訊 PCB 層   ---- 獨特的爆音消除電路 |
+| **背板 I/O 連接埠**  | 2 個 USB 3.2 Gen 2 連接埠 (1 個 Type-A，1 個 Type-C®) 4 個 USB 3.2 Gen 1 連接埠 (4 個 Type-A)  2 個 USB 2.0 連接埠 (2 個 Type-A)  1 個 DisplayPort  1 個 HDMI® 連接埠  1 個 VGA 連接埠  2 個 Intel® 2.5Gb 乙太網路連接埠  5 個音訊插孔  1 個 BIOS FlashBack™ 按鈕 |
 
-(continued on the next page)
+(續下頁)
 
 viii   
-**Pro WS W680-ACE specifications summary** 
+**Pro WS W680-ACE 規格摘要**
 
-| Internal I/O connectors | Fan and Cooling related   1 x 4-pin CPU Fan header  1 x 4-pin CPU OPT Fan header  1 x 4-pin W---_PUMP+ header  3 x 4-pin Chassis Fan headers  Power related   1 x 24-pin Main Power connector  1 x 8-pin ---+12V Power connector  1 x 4-pin ---+12V Power connector  1 x 6-pin PCIe Power connector  Storage related  3 x M.2 slots (Key M)   4 x SATA 6Gb/s ports  1 x SlimSAS port  USB  1 x USB 3.2 Gen 2x2 connector (supports USB Type-C®)  1 x USB 3.2 Gen 1 header supports 2 additional USB 3.2 Gen 1 ports 2 x USB 2.0 headers support 4 additional USB 2.0 ports  Miscellaneous  1 x BMC Header  1 x Clear CMOS header  1 x COM Port header  1 x FlexKey button  1 x Front Panel Audio header (AAFP)  1 x LPT header  1 x LPT---_P80 switch  1 x M.2 slot (Key E)  1 x SPI TPM header  1 x Start button  1 x 20-3 pin System Panel header with Chassis intrude function 1 x Thermal Sensor header  1 x Thunderbolt™ header |
+| 內部 I/O 連接器 | 風扇與散熱相關   1 個 4-pin CPU 風扇接頭  1 個 4-pin CPU OPT 風扇接頭  1 個 4-pin W\_PUMP+ 接頭  3 個 4-pin 機箱風扇接頭  電源相關   1 個 24-pin 主電源連接器  1 個 8-pin ---+12V 電源連接器  1 個 4-pin ---+12V 電源連接器  1 個 6-pin PCIe 電源連接器  儲存相關  3 個 M.2 插槽 (Key M)   4 個 SATA 6Gb/s 連接埠  1 個 SlimSAS 連接埠  USB  1 個 USB 3.2 Gen 2x2 連接器 (支援 USB Type-C®)  1 個 USB 3.2 Gen 1 接頭支援 2 個額外的 USB 3.2 Gen 1 連接埠 2 個 USB 2.0 接頭支援 4 個額外的 USB 2.0 連接埠  雜項  1 個 BMC 接頭  1 個清除 CMOS 接頭  1 個 COM 連接埠接頭  1 個 FlexKey 按鈕  1 個前面板音訊接頭 (AAFP)  1 個 LPT 接頭  1 個 LPT\_P80 開關  1 個 M.2 插槽 (Key E)  1 個 SPI TPM 接頭  1 個啟動按鈕  1 個 20-3 pin 系統面板接頭，具備機箱入侵功能 1 個散熱感測器接頭  1 個 Thunderbolt™ 接頭 |
 | ----- | :---- |
-| **Special Features** | **ASUS 5X PROTECTION III**  ---- DIGI+ VRM (Digital power design with DrMOS)   ---- ESD Guards    ---- LANGuard   ---- Overvoltage Protection   ---- SafeSlot   ---- Stainless-Steel Back I/O |
+| **特殊功能** | **華碩 5X 防護 III**  ---- DIGI+ VRM (採用 DrMOS 的數位電源設計)   ---- ESD 防護    ---- LANGuard   ---- 過電壓保護   ---- SafeSlot   ---- 不鏽鋼背板 I/O |
 
-(continued on the next page)
+(續下頁)
 
 ix   
-**Pro WS W680-ACE specifications summary**
+**Pro WS W680-ACE 規格摘要**
 
-| Special Features | ASUS Q-Design    ---- M.2 Q-Latch   ---- Q-Code   ---- Q-Connector   ---- Q-DIMM   ---- Q-LED (CPU ---[red---], DRAM ---[yellow---], VGA ---[white---], Boot Device ---[yellow  green---])   ---- Q-Slot  ASUS Thermal Solution   ---- M.2 heatsink   ---- VRM heatsink design  ASUS EZ DIY   ---- CPU Socket lever protector   ---- SafeDIMM   ---- SafeSlot   ---- BIOS FlashBack™ button   ---- BIOS FlashBack™ LED  Bespoke Motherboard Design & Business Focused Features  ---- 24/7 Reliability |
+| 特殊功能 | 華碩 Q-Design    ---- M.2 Q-Latch   ---- Q-Code   ---- Q-Connector   ---- Q-DIMM   ---- Q-LED (CPU ---[紅色---], DRAM ---[黃色---], VGA ---[白色---], 開機裝置 ---[黃綠色---])   ---- Q-Slot  華碩散熱解決方案   ---- M.2 散熱器   ---- VRM 散熱器設計  華碩 EZ DIY   ---- CPU 插槽拉桿保護蓋   ---- SafeDIMM   ---- SafeSlot   ---- BIOS FlashBack™ 按鈕   ---- BIOS FlashBack™ LED  客製化主機板設計與商務導向功能  ---- 24/7 可靠性 |
 | :---- | :---- |
-| **Software Features** | **ASUS Exclusive Software** Armoury Crate   ---- Fan Xpert 4    ---- Power Saving  ASUS CPU-Z  Norton 360 Deluxe (60 Days Free Trial)  WinRAR  IT Management software supported   ---- ASUS Control Center Express(ACCE)   **UEFI BIOS**  ASUS EZ DIY    ---- ASUS CrashFree BIOS 3    ---- ASUS EZ Flash 3   FlexKey |
-| **BIOS**  | 256 Mb Flash ROM, UEFI AMI BIOS |
-| **Manageability**  | WOL by PME, PXE  |
-| **Operating System**  | Windows® 11 Windows® 10 64-bit  |
-| **Form Factor**  | ATX Form Factor 12 inch x 9.6 inch (30.5 cm x 24.4 cm) |
+| **軟體功能** | **華碩獨家軟體** Armoury Crate   ---- Fan Xpert 4    ---- 省電  華碩 CPU-Z  Norton 360 Deluxe (60 天免費試用)  WinRAR  支援的 IT 管理軟體   ---- 華碩 Control Center Express(ACCE)   **UEFI BIOS**  華碩 EZ DIY    ---- 華碩 CrashFree BIOS 3    ---- 華碩 EZ Flash 3   FlexKey |
+| **BIOS**  | 256 Mb 快閃 ROM，UEFI AMI BIOS |
+| **管理性**  | WOL by PME, PXE  |
+| **作業系統**  | Windows® 11 Windows® 10 64 位元  |
+| **尺寸**  | ATX 尺寸 12 吋 x 9.6 吋 (30.5 公分 x 24.4 公分) |
 
 x   
-• Specifications are subject to change without notice. Please refer to the ASUS website  for the latest specifications. 
+• 規格如有變更，恕不另行通知。請參閱華碩網站以取得最新規格。
 
-• For more information on downloading and installing drivers and utilities for your  motherboard, please scan the QR code below:
+• 如需下載及安裝主機板驅動程式與公用程式的更多資訊，請掃描下方 QR 碼：
 
 ![][image2]
 
 xi   
-**Package contents** 
+**包裝內容**
 
-Check your motherboard package for the following items. 
+請檢查您的主機板包裝中是否有以下物品。
 
-Motherboard 1 x Pro WS W680-ACE IPMI motherboard or  1 x Pro WS W680-ACE motherboard 
+主機板 1 x Pro WS W680-ACE IPMI 主機板或  1 x Pro WS W680-ACE 主機板
 
-Cables 2 x SATA 6Gb/s cables  
+纜線 2 條 SATA 6Gb/s 纜線
 
-1 x IPMI expansion card 
+1 張 IPMI 擴充卡
 
-IPMI Expansion Card and  related accessories---* 
+IPMI 擴充卡及相關配件---*
 
-**---* This item or package is only  available for Pro WS W680-ACE  IPMI.** 
+**---* 此項目或包裝僅適用於 Pro WS W680-ACE IPMI。**
 
-Miscellaneous   
-1 x BMC cable 
+雜項
+1 條 BMC 纜線
 
-1 x Power On/Off cable 
+1 條電源開/關纜線
 
-1 x Reset cable 
+1 條重設纜線
 
-1 x USB 2.0 cable 
+1 條 USB 2.0 纜線
 
-1 x IPMI Expansion Card user guide 1 x Q-connector   
-1 x M.2 rubber package 
+1 x IPMI 擴充卡使用者指南 1 x Q-connector
+1 個 M.2 橡膠墊片組
 
-2 x Screw packages for M.2 SSD 
+2 個 M.2 SSD 螺絲組
 
-Documentation 1 x User guide   
-1 x ACC Express Activation Key Card 
+文件 1 x 使用者指南
+1 張 ACC Express 啟用金鑰卡
 
-If any of the above items is damaged or missing, contact your retailer.
+如果上述任何物品損壞或遺失，請聯繫您的零售商。
 
 xii   
-**Chapter 1: Product Introduction**   
-**Product Introduction** 1 **Chapter 1**   
-**1.1 Before you proceed** 
+**第 1 章：產品介紹**
+**產品介紹** 1 **第 1 章**
+**1.1 開始之前**
 
-Take note of the following precautions before you install motherboard components or  change any motherboard settings.
+在安裝主機板組件或變更任何主機板設定之前，請注意以下預防措施。
 
-• Unplug the power cord from the wall socket before touching any component. 
+• 在觸摸任何組件之前，請從牆壁插座拔下電源線。
 
-• Before handling components, use a grounded wrist strap or touch a safely grounded    
-object or a metal object, such as the power supply case, to avoid damaging them due    
-to static electricity. 
+• 在處理組件之前，請使用接地腕帶或觸摸安全接地的物體或金屬物體（例如電源供應器外殼），以避免因靜電而損壞組件。
 
-• Hold components by the edges to avoid touching the ICs on them. 
+• 握住組件的邊緣，以避免觸摸其上的 IC。
 
-• Whenever you uninstall any component, place it on a grounded antistatic pad or in    
-the bag that came with the component. 
+• 每當您卸載任何組件時，請將其放置在接地的防靜電墊上或組件附帶的袋子中。
 
-• Before you install or remove any component, ensure that the ATX power supply is    
-switched off or the power cord is detached from the power supply. Failure to do so    
-may cause severe damage to the motherboard, peripherals, or components. 
+• 在安裝或移除任何組件之前，請確保 ATX 電源供應器已關閉或電源線已從電源供應器上拔下。否則可能會對主機板、周邊設備或組件造成嚴重損壞。
 
-• The pin definitions in this chapter are for reference only. The pin names depend on    
-the location of the header/jumper/connector. 
+• 本章中的腳位定義僅供參考。腳位名稱取決於接頭/跳線/連接器的位置。
 
-• For more information on installing your motherboard, please scan the QR code    
-below: 
+• 如需安裝主機板的更多資訊，請掃描下方 QR 碼：
 
 ![][image3]
 
-Pro WS W680-ACE Series 1-1   
-**1.2 Motherboard layout**
+Pro WS W680-ACE 系列 1-1
+**1.2 主機板佈局**
 
-**Chapter 1** 
-
-|  |
-| :---- |
-|  |
+**第 1 章**
 
 |  |
 | :---- |
 |  |
 
-1-2 Chapter 1: Product Introduction 
+|  |
+| :---- |
+|  |
 
-| Layout contents  | Page |
+1-2 第 1 章：產品介紹
+
+| 版面內容  | 頁面 |
 | :---- | :---: |
-| 1---. CPU socket  | 1-4 |
-| 2---. DIMM slots  | 1-5 |
-| 3---. Expansion slots  | 1-7 |
-| 4---. Fan headers  | 1-9 |
-| 5---. Power connectors  | 1-10 |
-| 6---. M.2 slot  | 1-11 |
-| 7---. SATA 6GB/s port  | 1-12 |
-| 8---. SlimSAS port  | 1-13 |
-| 9---. USB 3.2 Gen 2x2 Type-C® Front Panel connector  | 1-13 |
-| 10---. USB 3.2 Gen 1 header  | 1-14 |
-| 11---. USB 2.0 connector  | 1-15 |
-| 12---. BMC header  | 1-16 |
-| 13---. Clear CMOS header  | 1-17 |
-| 14---. COM Port header  | 1-18 |
-| 15---. FlexKey button (Reset)  | 1-19 |
-| 16---. Front Panel Audio header  | 1-20 |
-| 17---. LPT header  | 1-20 |
-| 18---. LPT and Q-Code Switch header  | 1-21 |
-| 19---. M.2 slot (Key E)  | 1-21 |
-| 20---. Start button  | 1-22 |
-| 21---. System Panel header  | 1-23 |
-| 22---. Thermal Sensor header  | 1-24 |
-| 23---. Thunderbolt™ header  | 1-25 |
-| 24---. TPM header  | 1-26 |
+| 1---. CPU 插槽  | 1-4 |
+| 2---. DIMM 插槽  | 1-5 |
+| 3---. 擴充插槽  | 1-7 |
+| 4---. 風扇接頭  | 1-9 |
+| 5---. 電源連接器  | 1-10 |
+| 6---. M.2 插槽  | 1-11 |
+| 7---. SATA 6GB/s 連接埠  | 1-12 |
+| 8---. SlimSAS 連接埠  | 1-13 |
+| 9---. USB 3.2 Gen 2x2 Type-C® 前面板連接器  | 1-13 |
+| 10---. USB 3.2 Gen 1 接頭  | 1-14 |
+| 11---. USB 2.0 連接器  | 1-15 |
+| 12---. BMC 接頭  | 1-16 |
+| 13---. 清除 CMOS 接頭  | 1-17 |
+| 14---. COM 連接埠接頭  | 1-18 |
+| 15---. FlexKey 按鈕 (重設)  | 1-19 |
+| 16---. 前面板音訊接頭  | 1-20 |
+| 17---. LPT 接頭  | 1-20 |
+| 18---. LPT 與 Q-Code 切換接頭  | 1-21 |
+| 19---. M.2 插槽 (Key E)  | 1-21 |
+| 20---. 啟動按鈕  | 1-22 |
+| 21---. 系統面板接頭  | 1-23 |
+| 22---. 散熱感測器接頭  | 1-24 |
+| 23---. Thunderbolt™ 接頭  | 1-25 |
+| 24---. TPM 接頭  | 1-26 |
 | 25---. Q-Code LED  | 1-26 |
-| 26---. Q LEDs  | 1-27 |
+| 26---. Q-LED  | 1-27 |
 | 27---. BIOS FlashBack™ LED  | 1-2 |
-| 28---. 8-pin Power Plug LED  | 1-28 |
+| 28---. 8-pin 電源插頭 LED  | 1-28 |
 
-**Chapter 1**
+**第 1 章**
 
-Pro WS W680-ACE Series 1-3   
-**1---. CPU socket** 
+Pro WS W680-ACE 系列 1-3
+**1---. CPU 插槽**
 
-The motherboard comes with a LGA1700 socket designed for 13th Gen Intel® Core™  Processors & 12th Gen Intel® Core™, Pentium® Gold and Celeron® Processors. 
+主機板配備 LGA1700 插槽，專為第 13 代 Intel® Core™ 處理器和第 12 代 Intel® Core™、Pentium® Gold 和 Celeron® 處理器設計。
 
-**Chapter 1** 
+**第 1 章**
 
-• Ensure that you install the correct CPU designed for LGA1700 socket only. DO NOT    
-install a CPU designed for other sockets on the LGA1700 socket. 
+• 請務必僅安裝專為 LGA1700 插槽設計的正確 CPU。請勿將專為其他插槽設計的 CPU 安裝到 LGA1700 插槽上。
 
-• The CPU fits in only one correct orientation. DO NOT force the CPU into the socket    
-to prevent bending the connectors on the socket and damaging the CPU. 
+• CPU 僅能以一個正確的方向安裝。請勿強行將 CPU 插入插槽，以免彎曲插槽上的連接器並損壞 CPU。
 
-• Ensure that all power cables are unplugged before installing the CPU. 
+• 安裝 CPU 前，請確保所有電源線均已拔下。
 
-• Upon purchase of the motherboard, ensure that the PnP cap is on the socket and    
-the socket contacts are not bent. Contact your retailer immediately if the PnP cap    
-is missing, or if you see any damage to the PnP cap/socket contacts/motherboard    
-components. ASUS will shoulder the cost of repair only if the damage is shipment/   
-transit-related. 
+• 購買主機板時，請確保 PnP 保護蓋位於插槽上，且插槽接點未彎曲。如果 PnP 保護蓋遺失，或發現 PnP 保護蓋/插槽接點/主機板組件有任何損壞，請立即聯繫您的零售商。華碩僅在損壞與運送/運輸相關時承擔維修費用。
 
-• Keep the cap after installing the motherboard. ASUS will process Return    
-Merchandise Authorization (RMA) requests only if the motherboard comes with the    
-cap on the socket. 
+• 安裝主機板後，請保留保護蓋。華碩僅在主機板附有插槽保護蓋的情況下處理退貨授權 (RMA) 要求。
 
-• The product warranty does not cover damage to the socket contacts resulting from    
-incorrect CPU installation/removal, or misplacement/loss/incorrect removal of the  
+• 產品保固不涵蓋因不正確的 CPU 安裝/移除，或 PnP 保護蓋的錯置/遺失/不正確移除而導致的插槽接點損壞。
 
-PnP cap.
+1-4 第 1 章：產品介紹
+**2---. DIMM 插槽**
 
-1-4 Chapter 1: Product Introduction   
-**2---. DIMM slots** 
+主機板配備專為 DDR5（雙倍資料速率 5）記憶體模組設計的雙列直插記憶體模組 (DIMM) 插槽。
 
-The motherboard comes with Dual Inline Memory Modules (DIMM) slots designed for DDR5  (Double Data Rate 5---) memory modules. 
+**第 1 章**
+DDR5 記憶體模組的凹口與 DDR、DDR2、DDR3 或 DDR4 模組不同。請勿將 DDR、DDR2、DDR3 或 DDR4 記憶體模組安裝到 DDR5 插槽中。
 
-**Chapter 1**   
-A DDR5 memory module is notched differently from a DDR, DDR2, DDR3, or DDR4    
-module. DO NOT install a DDR, DDR2, DDR3, or DDR4 memory module to the DDR5    
-slot. 
+**建議的記憶體組態**
 
-**Recommended memory configurations**
+Pro WS W680-ACE 系列 1-5
+**記憶體組態**
 
-Pro WS W680-ACE Series 1-5   
-**Memory configurations** 
+您可以在 DIMM 插槽中安裝 8GB、16GB 和 32GB 的無緩衝和非 ECC DDR5 DIMM。
 
-You may install 8GB, 16GB, and 32GB unbuffered and non‑ECC DDR5 DIMMs into the  DIMM sockets. 
+**第 1 章**
+您可以在通道 A 和通道 B 中安裝不同大小的記憶體。系統會將較小通道的總大小對應至雙通道組態。然後，較大通道的任何多餘記憶體都會對應至單通道操作。
 
-**Chapter 1**   
-You may install varying memory sizes in Channel A and Channel B. The system maps    
-the total size of the lower-sized channel for the dual-channel configuration. Any excess    
-memory from the higher-sized channel is then mapped for single-channel operation. 
+• 預設記憶體運作頻率取決於其串列存在偵測 (SPD)，這是從記憶體模組存取資訊的標準方式。在預設狀態下，某些超頻記憶體模組的運作頻率可能低於廠商標示的值。
 
-• The default memory operation frequency is dependent on its Serial Presence Detect    
-(SPD), which is the standard way of accessing information from a memory module.    
-Under the default state, some memory modules for overclocking may operate at a    
-lower frequency than the vendor-marked value. 
+• 為確保系統穩定性，請使用更有效率的記憶體散熱系統，以支援滿載記憶體或超頻狀況。
 
-• For system stability, use a more efficient memory cooling system to support a full    
-memory load or overclocking condition. 
+• 請務必安裝具有相同 CAS 延遲的 DIMM。為獲得最佳相容性，我們建議您安裝來自相同廠商的相同版本或資料代碼 (D/C) 的記憶體模組。請向廠商確認以取得正確的記憶體模組。
 
-• Always install the DIMMS with the same CAS Latency. For an optimum compatibility,  we recommend that you install memory modules of the same version or data code    
-(D/C) from the same vendor. Check with the vendor to get the correct memory    
-modules. 
+• 請造訪華碩網站以取得最新的 QVL。
 
-• Visit the ASUS website for the latest QVL.
+1-6 第 1 章：產品介紹
+**3---. 擴充插槽**
 
-1-6 Chapter 1: Product Introduction   
-**3---. Expansion slots** 
+新增或移除擴充卡之前，請拔下電源線。否則可能會對您造成人身傷害並損壞主機板組件。
 
-Unplug the power cord before adding or removing expansion cards. Failure to do so may    
-cause you physical injury and damage motherboard components. 
-
-**Chapter 1** 
+**第 1 章**
 
 |  |
 | :---- |
@@ -370,324 +341,288 @@ cause you physical injury and damage motherboard components.
 | :---- |
 |  |
 
-• Additional PCIe bifurcation and M.2 settings for RAID function are also supported  when a Hyper M.2 x16 series card is installed. 
+• 安裝 Hyper M.2 x16 系列卡時，也支援額外的 PCIe 分岔和 M.2 設定以用於 RAID 功能。
 
-• For full details on the PCIe bifurcation, you may visit the support site at    
-https://www.asus.com/support/FAQ/1037507/. 
+• 有關 PCIe 分岔的完整詳細資訊，請造訪支援網站 https://www.asus.com/support/FAQ/1037507/。
 
-• The Hyper M.2 X16 series card is sold separately. 
+• Hyper M.2 X16 系列卡需另行購買。
 
-• Adjust the PCIe bifurcation under BIOS settings.
+• 在 BIOS 設定中調整 PCIe 分岔。
 
-Please refer to the following tables for the recommended VGA configuration and PCIe  bifurcation configuration. 
+請參閱下表以取得建議的 VGA 組態和 PCIe 分岔組態。
 
-Pro WS W680-ACE Series 1-7   
-**Recommended VGA configuration** 
+Pro WS W680-ACE 系列 1-7
+**建議的 VGA 組態**
 
-| Slot Description  |  | Single VGA  | Dual VGA |  Triple VGA |  Quad VGA |
+| 插槽說明  |  | 單張 VGA  | 雙張 VGA |  三張 VGA |  四張 VGA |
 | :---- | :---- | :---: | :---: | :---: | :---: |
-| 2 |  PCIEX16(G5)---_1  | x16  | x8  | x8  | x8 |
-| 3 |  PCIEX16(G5)---_2  | ----  | x8  | x8  | x8 |
-| 4 |  PCIEX16(G3)---_1  | ----  | ----  | x4  | x4 |
-| 5 |  PCIEX16(G3)---_2  | ----  | ----  | ----  | x4 |
+| 2 |  PCIEX16(G5)\_1  | x16  | x8  | x8  | x8 |
+| 3 |  PCIEX16(G5)\_2  | ----  | x8  | x8  | x8 |
+| 4 |  PCIEX16(G3)\_1  | ----  | ----  | x4  | x4 |
+| 5 |  PCIEX16(G3)\_2  | ----  | ----  | ----  | x4 |
 
-**Chapter 1**   
-• Connect a chassis fan to the chassis fan connectors when using multiple graphics    
-cards for better thermal environment. 
+**第 1 章**
+• 使用多張顯示卡時，請連接機箱風扇至機箱風扇連接器，以獲得更好的散熱環境。
 
-• When installing a dual VGA card, we recommend selecting a chassis case which    
-supports 7 or more expansion slots 
+• 安裝雙 VGA 卡時，我們建議選擇支援 7 個或更多擴充插槽的機箱。
 
-**PCIe bifurcation & M.2 settings in PCIe x16 slots (from CPU)**
+**PCIe x16 插槽 (來自 CPU) 中的 PCIe 分岔與 M.2 設定**
 
-| Slot Description  |  | Quantity of identifiable Intel M.2 SSD (pcs) |  |  |
+| 插槽說明  |  | 可辨識的 Intel M.2 SSD 數量 (個) |  |  |
 | ----- | :---- | :---: | :---: | :---: |
-|  |  | **Situation 1** |  **Situation 2** |  **Situation 3** |
-| 2 |  PCIEX16(G5)---_1  | 1 (x16)  | 2 (x8 ---+ x8)  | 1 (x8) |
-| 3 |  PCIEX16(G5)---_2  | ----  | ----  | 1 (x8) |
-| 4 |  PCIEX16(G3)---_1  | 1 (x4)  | 1 (x4)  | 1 (x4) |
-| 5 |  PCIEX16(G3)---_2  | 1 (x4)  | 1 (x4)  | 1 (x4) |
+|  |  | **情況 1** |  **情況 2** |  **情況 3** |
+| 2 |  PCIEX16(G5)\_1  | 1 (x16)  | 2 (x8 ---+ x8)  | 1 (x8) |
+| 3 |  PCIEX16(G5)\_2  | ----  | ----  | 1 (x8) |
+| 4 |  PCIEX16(G3)\_1  | 1 (x4)  | 1 (x4)  | 1 (x4) |
+| 5 |  PCIEX16(G3)\_2  | 1 (x4)  | 1 (x4)  | 1 (x4) |
 
-1-8 Chapter 1: Product Introduction   
-**4---. Fan and Pump headers** 
+1-8 第 1 章：產品介紹
+**4---. 風扇與幫浦接頭**
 
-The Fan and Pump headers allow you to connect fans or pumps to cool the system. **Chapter 1** 
+風扇與幫浦接頭可讓您連接風扇或幫浦以冷卻系統。 **第 1 章**
 
-• DO NOT forget to connect the fan cables to the fan headers. Insufficient air flow    
-inside the system may damage the motherboard components. These are not    
-jumpers---! Do not place jumper caps on the fan headers---! 
+• 請勿忘記將風扇纜線連接到風扇接頭。系統內部氣流不足可能會損壞主機板組件。這些不是跳線！請勿在風扇接頭上放置跳線帽！
 
-• Ensure the cable is fully inserted into the header. 
+• 請確保纜線已完全插入接頭。
 
-For water cooling kits, connect the pump connector to the **W---_PUMP+** header.
+對於水冷套件，請將幫浦連接器連接到 **W\_PUMP+** 接頭。
 
-| Header |  Max. Current |  Max. Power |  Default Speed |  Shared Control |
+| 接頭 |  最大電流 |  最大功率 |  預設速度 |  共用控制 |
 | :---- | :---: | :---: | :---: | :---: |
-| CPU---_FAN  | 1A  | 12W |  Q-Fan Controlled  | A |
-| CPU---_OPT  | 1A  | 12W |  Q-Fan Controlled  | A |
-| CHA---_FAN1  | 1A  | 12W |  Q-Fan Controlled  | ---- |
-| CHA---_FAN2  | 1A  | 12W |  Q-Fan Controlled  | ---- |
-| CHA---_FAN3  | 1A  | 12W |  Q-Fan Controlled  | ---- |
-| W---_PUMP+  | 3A  | 36W  | Full Speed  | ---- |
+| CPU\_風扇  | 1A  | 12W |  Q-Fan 控制  | A |
+| CPU\_OPT  | 1A  | 12W |  Q-Fan 控制  | A |
+| CHA\_FAN1  | 1A  | 12W |  Q-Fan 控制  | ---- |
+| CHA\_FAN2  | 1A  | 12W |  Q-Fan 控制  | ---- |
+| CHA\_FAN3  | 1A  | 12W |  Q-Fan 控制  | ---- |
+| W\_PUMP+  | 3A  | 36W  | 全速  | ---- |
 
-Pro WS W680-ACE Series 1-9   
-**5---. Power connectors** 
+Pro WS W680-ACE 系列 1-9
+**5---. 電源連接器**
 
-These Power connectors allow you to connect your motherboard to a power supply.  The power supply plugs are designed to fit in only one orientation, find the proper  orientation and push down firmly until the power supply plugs are fully inserted.   
-**Chapter 1** 
+這些電源連接器可讓您將主機板連接到電源供應器。電源供應器插頭的設計僅能以一種方向插入，請找到正確的方向並用力向下推，直到電源供應器插頭完全插入。
+**第 1 章**
 
-Ensure to connect the 8-pin power plug, or both the 8-pin and 4-pin power plugs. 
+請務必連接 8-pin 電源插頭，或同時連接 8-pin 和 4-pin 電源插頭。
 
-• We recommend that you use a PSU with a higher power output when configuring a    
-system with more power-consuming devices. The system may become unstable or    
-may not boot up if the power is inadequate. 
+• 我們建議您在設定具有較耗電裝置的系統時，使用功率輸出較高的電源供應器。如果電力不足，系統可能會變得不穩定或無法開機。
 
-• For a fully configured system, we recommend that you use a power supply unit    
-(PSU) that complies with ATX 12 V Specification 2.0 (or later version) and provides a    
-minimum power of 350W. 
+• 對於完全設定的系統，我們建議您使用符合 ATX 12 V 規格 2.0（或更新版本）且提供最低 350W 功率的電源供應器 (PSU)。
 
-• If you want to use two or more high-end PCI Express x16 cards, use an appropriate    
-PSU which can supply the required power to ensure the system stability. 
+• 如果您想使用兩張或多張高階 PCI Express x16 卡，請使用能夠提供所需電力的適當 PSU，以確保系統穩定性。
 
-The **PCIE---_6P---_PWR** provides additional power for your PCIe X16 slots.
+**PCIE\_6P\_PWR** 為您的 PCIe X16 插槽提供額外電力。
 
-1-10 Chapter 1: Product Introduction   
-**6---. M.2 slot** 
+1-10 第 1 章：產品介紹
+**6---. M.2 插槽**
 
-The M.2 slot allows you to install M.2 SSD modules. 
+M.2 插槽可讓您安裝 M.2 SSD 模組。
 
-**Chapter 1** 
+**第 1 章**
 
-• **Intel® 13th & 12th Gen Processors:** 
+• **Intel® 第 13 代與第 12 代處理器：**
 
- ---- M.2---_1 supports PCIE 4.0 x4 mode M Key design and type 2242 / 2260 / 2280    
-storage devices. 
+ ---- M.2\_1 支援 PCIE 4.0 x4 模式 M Key 設計和 2242 / 2260 / 2280 類型儲存裝置。
 
-• **Intel® W680 Chipset:** 
+• **Intel® W680 晶片組：**
 
- ---- M.2---_2 supports PCIE 4.0 x4 mode M Key design and type 2242 / 2260 / 2280    
-storage devices. 
+ ---- M.2\_2 支援 PCIE 4.0 x4 模式 M Key 設計和 2242 / 2260 / 2280 類型儲存裝置。
 
- ---- M.2---_3 supports PCIE 4.0 x4 mode M Key design and type 2242 / 2260 / 2280 /    
-22110 storage devices. 
+ ---- M.2\_3 支援 PCIE 4.0 x4 模式 M Key 設計和 2242 / 2260 / 2280 / 22110 類型儲存裝置。
 
-• Intel® Rapid Storage Technology supports PCIe RAID 0/1/5/10, SATA RAID 0/1/5/10. 
+• Intel® 快速儲存技術支援 PCIe RAID 0/1/5/10、SATA RAID 0/1/5/10。
 
-The M.2 SSD module is purchased separately.
+M.2 SSD 模組需另行購買。
 
-Pro WS W680-ACE Series 1-11   
-**7---. SATA 6Gb/s ports** 
+Pro WS W680-ACE 系列 1-11
+**7---. SATA 6Gb/s 連接埠**
 
-The SATA 6Gb/s ports allows you to connect SATA devices such as optical disc  drives and hard disk drives via a SATA cable. 
+SATA 6Gb/s 連接埠可讓您透過 SATA 纜線連接 SATA 裝置，例如光碟機和硬碟機。
 
-**Chapter 1** 
+**第 1 章**
 
-If you installed SATA storage devices to the **SATA6G---_1-4** ports, you can create a RAID 0,    
-1, 5, and 10 configuration with the Intel® Rapid Storage Technology through the onboard    
-Intel® W680 chipset. 
+如果您將 SATA 儲存裝置安裝到 **SATA6G\_1-4** 連接埠，您可以透過內建的 Intel® W680 晶片組，使用 Intel® 快速儲存技術建立 RAID 0、1、5 和 10 組態。
 
-Before creating a RAID set, refer to the **RAID Configuration Guide**. You can download  
+在建立 RAID 集之前，請參閱 **RAID 組態指南**。您可以從華碩網站下載 **RAID 組態指南**。
 
-the **RAID Configuration Guide** from the ASUS website.
+1-12 第 1 章：產品介紹
+**8---. SlimSAS 連接埠**
 
-1-12 Chapter 1: Product Introduction   
-**8---. SlimSAS port** 
+SlimSAS 連接埠可讓您連接 PCIe 4.0 x4 NVM Express 儲存裝置，並可使用傳輸線支援最多 4 個 SATA 裝置。
 
-The SlimSAS port allows you to connect PCIe 4.0 x4 NVM Express storage, and can  support up to 4 SATA devices using a transfer cable. 
+**第 1 章**
 
-**Chapter 1** 
+纜線需另行購買。
 
-Cables are purchased separately. 
+**9---. USB 3.2 Gen 2x2 Type-C® 前面板連接器**
 
-**9---. USB 3.2 Gen 2x2 Type-C® Front Panel connector** 
+USB 3.2 Gen 2x2 Type-C® 連接器可讓您連接 USB 3.2 Gen 2x2 Type-C® 模組，以便在前面板上提供額外的 USB 3.2 Gen 2x2 連接埠。USB 3.2 Gen 2x2 Type-C® 連接器提供高達 20 Gb/s 的資料傳輸速度。
 
-The USB 3.2 Gen 2x2 Type-C® connector allows you to connect a USB 3.2 Gen 2x2  Type-C® module for additional USB 3.2 Gen 2x2 ports on the front panel. The USB 3.2  Gen 2x2 Type-C® connector provides data transfer speeds of up to 20 Gb/s. 
+USB 3.2 Gen 2x2 Type-C® 模組需另行購買。
 
-The USB 3.2 Gen 2x2 Type-C® module is purchased separately.
+Pro WS W680-ACE 系列 1-13
+**10---. USB 3.2 Gen 1 接頭**
 
-Pro WS W680-ACE Series 1-13   
-**10---. USB 3.2 Gen 1 header** 
+USB 3.2 Gen 1 接頭可讓您連接 USB 3.2 Gen 1 模組以提供額外的 USB 3.2 Gen 1 連接埠。USB 3.2 Gen 1 接頭提供高達 5 Gb/s 的資料傳輸速度。
+**第 1 章**
 
-The USB 3.2 Gen 1 header allows you to connect a USB 3.2 Gen 1 module for  additional USB 3.2 Gen 1 ports. The USB 3.2 Gen 1 header provides data transfer  speeds of up to 5 Gb/s.   
-**Chapter 1** 
+USB 3.2 Gen 1 模組需另行購買。
 
-The USB 3.2 Gen 1 module is purchased separately.
+1-14 第 1 章：產品介紹
+**11---. USB 2.0 接頭**
 
-1-14 Chapter 1: Product Introduction   
-**11---. USB 2.0 header** 
+USB 2.0 接頭可讓您連接 USB 模組以提供額外的 USB 2.0 連接埠。USB 2.0 接頭提供高達 480 MB/s 的連接速度。
 
-The USB 2.0 header allows you to connect a USB module for additional USB    
-2.0 ports. The USB 2.0 header provides data transfer speeds of up to 480 MB/s  connection speed. 
+**第 1 章**
 
-**Chapter 1** 
+請勿將 1394 纜線連接到 USB 連接器。這樣做會損壞主機板！
 
-DO NOT connect a 1394 cable to the USB connectors. Doing so will damage the    
-motherboard---! 
+USB 2.0 模組需另行購買。
 
-The USB 2.0 module is purchased separately.
+Pro WS W680-ACE 系列 1-15
+**12---. BMC 接頭**
 
-Pro WS W680-ACE Series 1-15   
-**12---. BMC header** 
+BMC 接頭可讓您連接並支援 IPMI 卡。
 
-The BMC header allows you to connect and support an IPMI card. 
+**第 1 章**
 
-**Chapter 1** 
+• IPMI 卡需另行購買。
 
-• The IPMI card is purchased separately. 
+• 有關 IPMI 卡的安裝和資訊，請造訪 www.asus.com。
 
-• For more information on the installation and information regarding the IPMI card,  
+1-16 第 1 章：產品介紹
+**13---. 清除 CMOS 接頭**
 
-please visit www.asus.com.
+清除 CMOS 接頭可讓您清除 CMOS 中的即時時脈 (RTC) RAM，其中包含日期、時間、系統密碼和系統設定參數。
 
-1-16 Chapter 1: Product Introduction   
-**13---. Clear CMOS header** 
+**第 1 章**
 
-The Clear CMOS header allows you to clear the Real Time Clock (RTC) RAM in  the CMOS, which contains the date, time, system passwords, and system setup  parameters. 
+若要清除 RTC RAM：
 
-**Chapter 1** 
+1---. 關閉電腦並拔下電源線。
 
-To erase the RTC RAM: 
+2---. 使用金屬物體或跳線帽將腳位 1-2 短路約 5-10 秒。 3---. 插入電源線並開啟電腦。
 
-1---. Turn OFF the computer and unplug the power cord. 
+4---. 在開機過程中按住 ---<Del---> 鍵並進入 BIOS 設定以重新輸入資料。
 
-2---. Short-circuit pin 1-2 with a metal object or jumper cap for about 5-10 seconds. 3---. Plug the power cord and turn ON the computer. 
+除非要清除 RTC RAM，否則請勿短路腳位。短路或放置跳線帽會導致系統開機失敗！
 
-4---. Hold down the ---<Del---> key during the boot process and enter BIOS setup to  re-enter data. 
+如果上述步驟無效，請移除主機板上的鈕扣電池，然後再次將兩個腳位短路，以清除 CMOS RTC RAM 資料。清除 CMOS 後，重新安裝鈕扣電池。
 
-DO NOT short-circuit the pins except when clearing the RTC RAM. Short-circuiting or    
-placing a jumper cap will cause system boot failure---! 
+Pro WS W680-ACE 系列 1-17
+**14---. COM 連接埠連接器**
 
-If the steps above do not help, remove the onboard button cell battery and short the two    
-pins again to clear the CMOS RTC RAM data. After clearing the CMOS, reinstall the  
+COM（序列）連接埠連接器可讓您連接 COM 連接埠模組。將 COM 連接埠模組纜線連接到此連接器，然後將模組安裝到系統機箱的插槽開口。
+**第 1 章**
 
-button cell battery.
+COM 連接埠模組需另行購買。
 
-Pro WS W680-ACE Series 1-17   
-**14---. COM Port connector** 
+1-18 第 1 章：產品介紹
+**15---. FlexKey 按鈕 (重設)**
 
-The COM (Serial) Port connector allows you to connect a COM port module. Connect  the COM port module cable to this connector, then install the module to a slot opening  on the system chassis.   
-**Chapter 1** 
+按下 FlexKey 按鈕以重新啟動系統。您也可以設定按鈕並將快速存取功能（例如啟動安全開機）指派給該按鈕。
 
-The COM port module is purchased separately.
+**第 1 章**
 
-1-18 Chapter 1: Product Introduction   
-**15---. FlexKey button (Reset)** 
+此按鈕預設為 **---[重設---]**。您可以在 BIOS 設定中為此按鈕指派不同的功能。
 
-Press the FlexKey button to reboot the system. You may also configure the button and  assign a quick access feature such as activating Safe Boot to the button. 
+Pro WS W680-ACE 系列 1-19
+**16---. 前面板音訊接頭**
 
-**Chapter 1** 
+前面板音訊接頭適用於支援高傳真音訊的機箱安裝式前面板音訊 I/O 模組。將前面板音訊 I/O 模組纜線的一端連接到此接頭。
+**第 1 章**
 
-This button set to **---[Reset---]** by default. You can assign a different function to this button in  
+我們建議您將高傳真前面板音訊模組連接到此連接器，以利用主機板的高傳真音訊功能。
 
-the BIOS settings.
+**17---. LPT 接頭**
 
-Pro WS W680-ACE Series 1-19   
-**16---. Front Panel Audio header** 
+LPT（線式印表機終端機）連接器支援印表機等裝置。LPT 標準化為 IEEE 1284，即 IBM PC 相容電腦上的並列埠介面。
 
-The Front Panel Audio header is for a chassis-mounted front panel audio I/O module  that supports HD Audio. Connect one end of the front panel audio I/O module cable to  this header.   
-**Chapter 1** 
+1-20 第 1 章：產品介紹
+**18---. LPT 與 Q-Code 切換接頭**
 
-We recommend that you connect a high-definition front panel audio module to this    
-connector to avail of the motherboard’s high-definition audio capability. 
+LPT 與 Q-Code 切換接頭可讓您啟用 LPT (線式印表機散熱) 連接器或 Q-Code。
 
-**17---. LPT header** 
+**第 1 章**
 
-The LPT (Line Printing Terminal) connector supports devices such as a printer. LPT  standardizes as IEEE 1284, which is the parallel port interface on IBM PC-compatible  computers.
+**19---. M.2 插槽 (Key E)**
 
-1-20 Chapter 1: Product Introduction   
-**18---. LPT and Q-Code Switch header** 
+M.2 Wi-Fi 插槽可讓您安裝 M.2 Wi-Fi 模組（E-key，類型 2230；PCIe 介面）。
 
-The LPT and Q-Code Switch header allows you to enable either LPT (Line Printing  Thermal) connector or Q-Code. 
+M.2 Wi-Fi 模組需另行購買。
 
-**Chapter 1** 
+Pro WS W680-ACE 系列 1-21
+**20---. 啟動按鈕**
 
-**19---. M.2 slot (Key E)** 
+按下電源按鈕以啟動系統，或將系統置於睡眠或軟關機模式（視作業系統設定而定）。
 
-The M.2 Wi-Fi slot allows you to install an M.2 Wi-Fi module (E-key, type 2230; PCIe  interface). 
+**第 1 章**
 
-The M.2 Wi-Fi module is purchased separately.
+1-22 第 1 章：產品介紹
+**21---. 系統面板接頭**
 
-Pro WS W680-ACE Series 1-21   
-**20---. Start button** 
+系統面板接頭支援多種機箱安裝功能。
 
-Press the Power button to power up the system, or put the system into sleep or soft off mode (depending on the operating system settings).
+**第 1 章**
 
-**Chapter 1** 
+**• 系統電源 LED 接頭 (PLED)**
 
-1-22 Chapter 1: Product Introduction   
-**21---. System Panel header** 
+2-pin 接頭可讓您連接系統電源 LED。系統電源 LED 在系統連接到電源或開啟系統電源時會亮起，並在系統處於睡眠模式時閃爍。
 
-The System Panel header supports several chassis-mounted functions. 
+**• 儲存裝置活動 LED 接頭 (HDD\_LED)**
 
-**Chapter 1** 
+2-pin 接頭可讓您連接儲存裝置活動 LED。儲存裝置活動 LED 在從儲存裝置或儲存裝置附加卡讀取或寫入資料時會亮起或閃爍。
 
-**• System Power LED header (PLED)** 
+**• 系統警告喇叭接頭 (SPEAKER)**
 
-The 2-pin header allows you to connect the System Power LED. The System Power  LED lights up when the system is connected to a power source, or when you turn on  the system power, and blinks when the system is in sleep mode. 
+4-pin 接頭可讓您連接機箱安裝的系統警告喇叭。喇叭可讓您聽到系統嗶聲和警告。
 
-**• Storage Device Activity LED header (HDD---_LED)** 
+**• 電源按鈕/軟關機按鈕接頭 (PWRSW)**
 
-The 2-pin header allows you to connect the Storage Device Activity LED. The Storage  Device Activity LED lights up or blinks when data is read from or written to the storage  device or storage device add-on card. 
+3-1 針腳接頭可讓您連接系統電源按鈕。按下電源按鈕以啟動系統，或將系統置於睡眠或軟關機模式（視作業系統設定而定）。
 
-**• System Warning Speaker header (SPEAKER)** 
+**• 重設按鈕接頭 (RESET)**
 
-The 4-pin header allows you to connect the chassis-mounted system warning    
-speaker. The speaker allows you to hear system beeps and warnings. 
+2-pin 接頭可讓您連接機箱安裝的重設按鈕。按下重設按鈕以重新啟動系統。您也可以將此接頭設定為其他功能。
 
-**• Power Button/Soft-off Button header (PWRSW)** 
+此接頭預設為 **---[重設---]**。您可以在 BIOS 設定中為此接頭指派不同的功能。
 
-The 3-1 pin header allows you to connect the system power button. Press the    
-power button to power up the system, or put the system into sleep or soft-off mode  (depending on the operating system settings). 
+**• 機箱入侵連接器 (CHASSIS)**
 
-**• Reset button header (RESET)** 
+2-pin 連接器可讓您連接機箱安裝的入侵偵測感測器或開關。當機箱組件被移除或更換時，機箱入侵感測器或開關會向連接器傳送高電位訊號，該訊號接著會產生為機箱入侵事件。
 
-The 2-pin header allows you to connect the chassis-mounted reset button. Press the  reset button to reboot the system. You may also set this header to other functions. 
+Pro WS W680-ACE 系列 1-23
+**22---. 散熱感測器接頭**
 
-This header is set to **---[Reset---]** by default. You can assign a different function to this header    
-in the BIOS settings. 
+散熱感測器接頭可讓您連接感測器，以監控主機板內部裝置和關鍵組件的溫度。連接散熱感測器並將其放置在裝置或主機板的組件上，以偵測其溫度。
+**第 1 章**
+散熱感測器需另行購買。
 
-**• Chassis intrusion connector (CHASSIS)** 
+1-24 第 1 章：產品介紹
+**23---. Thunderbolt**™ **接頭**
 
-The 2-pin connector allows you to connect the chassis-mounted intrusion detection  sensor or switch. The chassis intrusion sensor or switch sends a high-level signal to  the connector when a chassis component is removed or replaced, the signal is then  generated as a chassis intrusion event.
+Thunderbolt™ 接頭可讓您連接支援 Intel® Thunderbolt™ 技術的附加 Thunderbolt™ I/O 卡，讓您連接支援 Thunderbolt™ 的裝置以形成菊鏈組態。
 
-Pro WS W680-ACE Series 1-23   
-**22---. Thermal Sensor header** 
+**第 1 章**
 
-The Thermal Sensor header allows you to connect a sensor to monitor the  temperature of the devices and the critical components inside the motherboard.  Connect the thermal sensor and place it on the device or the motherboard’s    
-**Chapter 1**   
-component to detect its temperature. 
+• 附加的 Thunderbolt™ I/O 卡和 Thunderbolt™ 纜線需另行購買。
 
-The thermal sensor is purchased separately.
+• 有關相容性的更多詳細資訊，請造訪您所購買的 Thunderbolt™ 卡的官方網站。
 
-1-24 Chapter 1: Product Introduction   
-**23---. Thunderbolt**™ **header** 
+Thunderbolt™ 卡只能安裝到 PCIEX16(G3)\_2 插槽才能使用。
 
-The Thunderbolt™ header allows you to connect an add-on Thunderbolt™ I/O    
-card that supports Intel®’s Thunderbolt™ Technology, allowing you to connect    
-Thunderbolt™-enabled devices to form a daisy-chain configuration. 
+請務必將您的 Thunderbolt™ 卡安裝到 PCIEX16(G3)\_2 插槽。
 
-**Chapter 1** 
+Pro WS W680-ACE 系列 1-25
+**24---. TPM 接頭**
 
-• The add-on Thunderbolt™ I/O card and Thunderbolt™ cables are purchased    
-separately. 
+TPM 接頭可讓您連接 TPM 模組，以安全地儲存金鑰、數位憑證、密碼和資料。TPM 系統也有助於增強網路安全性、保護數位身分並確保平台完整性。
+**第 1 章**
 
-• Please visit the official website of your purchased Thunderbolt™ card for more details  on compatibility. 
-
-The Thunderbolt™ card can only be used when installed to the PCIEX16(G3)---_2 slot.  
-
-Ensure to install your Thunderbolt™ card to the PCIEX16(G3)---_2 slot.
-
-Pro WS W680-ACE Series 1-25   
-**24---. TPM header** 
-
-The TPM header allows you to connect a TPM module, which securely stores keys,  digital certificates, passwords, and data. A TPM system also helps enhance network  security, protect digital identities, and ensures platform integrity.   
-**Chapter 1** 
-
-The TPM module is purchased separately.
+TPM 模組需另行購買。
 
 **25---. Q-Code LED** 
 
-The Q-Code LED design provides you with a 2-digit error code that displays the  system status. 
+Q-Code LED 設計提供您一個 2 位數的錯誤碼，顯示系統狀態。
 
 |  |
 | :---- |
@@ -697,892 +632,784 @@ The Q-Code LED design provides you with a 2-digit error code that displays the  
 | :---- |
 |  |
 
-• The Q-Code LEDs provide the most probable cause of an error code as a starting  point for troubleshooting. The actual cause may vary from case to case. 
+• Q-Code LED 提供錯誤碼最可能的原因，作為疑難排解的起點。實際原因可能因情況而異。
 
-• Please refer to the Q-Code table in the **Appendix** section for more details. 
+• 詳細資訊請參閱 **附錄** 章節的 Q-Code 表。
 
-1-26 Chapter 1: Product Introduction   
-**26---. Q-LEDs** 
+1-26 第 1 章：產品介紹
+**26---. Q-LED**
 
-The Q-LEDs check key components (CPU, DRAM, VGA, and booting devices) during  the motherboard booting process. If an error is found, the critical component’s LED  stays lit up until the problem is solved. 
+Q-LED 在主機板開機過程中會檢查關鍵組件（CPU、DRAM、VGA 和開機裝置）。如果發現錯誤，關鍵組件的 LED 會持續亮起，直到問題解決。
 
-**Chapter 1** 
+**第 1 章**
 
-The Q-LEDs provide the most probable cause of an error code as a starting point for    
-troubleshooting. The actual cause may vary from case to case. 
+Q-LED 提供錯誤碼最可能的原因，作為疑難排解的起點。實際原因可能因情況而異。
 
 **27---. BIOS FlashBack**™ **LED** 
 
-The BIOS FlashBack™ LED lights up or blinks to indicate the status of the BIOS  FlashBack™. 
+BIOS FlashBack™ LED 會亮起或閃爍，以指示 BIOS FlashBack™ 的狀態。
 
-Refer to the **BIOS update utility** section for more information on using the BIOS  
+有關使用 BIOS FlashBack™ 功能的更多資訊，請參閱 **BIOS 更新公用程式** 章節。
 
-FlashBack™ feature.
+Pro WS W680-ACE 系列 1-27
+**28---. 8-pin 電源插頭 LED**
 
-Pro WS W680-ACE Series 1-27   
-**28---. 8-pin Power Plug LED** 
+8-pin 電源插頭 LED 會亮起，表示 8-pin 電源插頭未連接。
 
-The 8-pin Power Plug LED lights up to indicate that the 8-pin power plug is not  connected.
+**第 1 章**
 
-**Chapter 1** 
+1-28 第 1 章：產品介紹
+**第 2 章：基本安裝**
 
-1-28 Chapter 1: Product Introduction   
-**Chapter 2: Basic Installation** 
-
-**Basic Installation 2.1 Building your PC system** 
+**基本安裝 2.1 組建您的個人電腦系統**
 
 2 
 
-The diagrams in this section are for reference only. The motherboard layout may vary with  models, but the installation steps are the same for all models. 
+本節中的圖表僅供參考。主機板佈局可能因型號而異，但所有型號的安裝步驟均相同。
 
-**2.1.1 CPU installation** 
+**2.1.1 CPU 安裝**
 
-• Ensure that you install the correct CPU designed for LGA1700 socket only. DO NOT    
-install a CPU designed for LGA1155, LGA1156, LGA1151, and LGA1200 sockets on    
-the LGA1700 socket.   
-**Chapter 2**   
-• ASUS will not cover damages resulting from incorrect CPU installation/removal,    
-incorrect CPU orientation/placement, or other damages resulting from negligence by    
-the user. 
+• 請務必僅安裝專為 LGA1700 插槽設計的正確 CPU。請勿將專為 LGA1155、LGA1156、LGA1151 和 LGA1200 插槽設計的 CPU 安裝到 LGA1700 插槽上。
+**第 2 章**
+• 華碩不承擔因不正確的 CPU 安裝/移除、不正確的 CPU 方向/放置或其他因使用者疏忽而造成的損壞。
 
-Take caution when lifting the load    
-lever, ensure to hold onto the load    
-lever when releasing the load    
-lever. Letting go of the load lever    
-immediately after releasing it may    
-cause the load lever to spring    
-back and cause damage to your  
+抬起負載桿時請小心，鬆開負載桿時請務必握住負載桿。鬆開後立即放開負載桿可能會導致負載桿彈回並損壞您的主機板。
 
-motherboard.
+Pro WS W680-ACE 系列 2-1
+**第 2 章**
 
-Pro WS W680-ACE Series 2-1   
-**Chapter 2** 
+在將拉桿閂鎖鎖定在固定片下方之前，請務必取下拉桿閂鎖上的 CPU 插槽拉桿保護蓋。否則在安裝散熱系統時可能會對您的系統造成損壞。
 
-Ensure to remove the CPU    
-Socket lever protector on the    
-lever latch before locking the    
-lever latch under the retention    
-tab. Failure to do so may cause    
-damages to your system when  
+2-2 第 2 章：基本安裝
+**2.1.2 散熱系統安裝 若要安裝 CPU 散熱器和風扇組件**
 
-installing the cooling system.
+• 如有必要，在安裝散熱系統之前，請將散熱介面材料塗抹在 CPU 散熱系統和 CPU 上。
 
-2-2 Chapter 2: Basic Installation   
-**2.1.2 Cooling system installation To install a CPU heatsink and fan assembly** 
+• 在安裝散熱系統之前，請務必取下拉桿閂鎖上的 CPU 插槽拉桿保護蓋，否則可能會對您的系統造成損壞。
 
-• Apply Thermal Interface Material to    
-the CPU cooling system and CPU    
-before you install the cooling system,    
-if necessary. 
+**第 2 章**
 
-• Ensure to remove the CPU Socket    
-lever protector on the lever latch    
-before installing the cooling system,    
-failure to do so may cause damages  
+Pro WS W680-ACE 系列 2-3
 
-to your system.
-
-**Chapter 2** 
-
-Pro WS W680-ACE Series 2-3 
-
-**Chapter 2**   
-**Bottom side of motherboard**
+**第 2 章**
+**主機板底側**
 
 LGA1200 
 
 LGA1700   
-• We recommend using a  LGA1700 compatible cooling  system on an Intel® 600 series  motherboard. 
+• 我們建議在 Intel® 600 系列主機板上使用與 LGA1700 相容的散熱系統。
 
-• Additional holes for LGA1200  compatible cooling systems    
-are also available on ASUS’  Intel® 600 series motherboards,  however, we still strongly advise  consulting with your cooling    
-system vendor or manufacturer  on the compatibility and    
-functionality of the cooling    
-system. 
+• 華碩 Intel® 600 系列主機板上也提供與 LGA1200 相容的散熱系統的額外孔位，但我們仍然強烈建議您諮詢您的散熱系統供應商或製造商，以了解散熱系統的相容性和功能。
 
-• Push-pin type LGA1200  compatible cooling systems    
-cannot be installed to this    
-motherboard. 
+• 無法將推針式 LGA1200 相容的散熱系統安裝到此主機板上。
 
-Make sure a click is heard when  pushing the push-pins. 
+推入推針時，請確保聽到喀噠聲。
 
-2-4 Chapter 2: Basic Installation   
-**To install an AIO cooler** 
+2-4 第 2 章：基本安裝
+**若要安裝一體式水冷散熱器**
 
-• We recommend using a LGA1700 compatible cooling system on an Intel® 600 series    
-motherboard. 
+• 我們建議在 Intel® 600 系列主機板上使用與 LGA1700 相容的散熱系統。
 
-• Additional holes for LGA1200 compatible cooling systems are also available on    
-ASUS’ Intel® 600 series motherboards, however, we still strongly advise consulting    
-with your cooling system vendor or manufacturer on the compatibility and    
-functionality of the cooling system. 
+• 華碩 Intel® 600 系列主機板上也提供與 LGA1200 相容的散熱系統的額外孔位，但我們仍然強烈建議您諮詢您的散熱系統供應商或製造商，以了解散熱系統的相容性和功能。
 
-• If you wish to install an AIO cooler, we recommend installing the AIO cooler after    
-installing the motherboard into the chassis. 
+• 如果您想安裝一體式水冷散熱器，我們建議您在將主機板安裝到機箱後再安裝一體式水冷散熱器。
 
-**Chapter 2** 
+**第 2 章**
 
-CPU---_FAN
+CPU\_風扇
 
-CPU---_OPT 
+CPU\_OPT
 
 |  |
 | :---- |
 
-W---_PUMP+/  AIO---_PUMP 
+W\_PUMP+/  AIO\_PUMP
 
-Pro WS W680-ACE Series 2-5 
+Pro WS W680-ACE 系列 2-5
 
-**Chapter 2**   
-**2.1.3 DIMM installation To remove a DIMM**  
-2-6 Chapter 2: Basic Installation   
-**2.1.4 M.2 installation** 
+**第 2 章**
+**2.1.3 DIMM 安裝 若要移除 DIMM**
+2-6 第 2 章：基本安裝
+**2.1.4 M.2 安裝**
 
-Supported M.2 type varies per motherboard. 
+支援的 M.2 類型因主機板而異。
 
-If the thermal pad on the M.2 heatsink becomes damaged, we recommend replacing it    
-with a thermal pad with a thickness of 1.25mm. 
+如果 M.2 散熱器上的散熱墊損壞，我們建議更換為厚度為 1.25mm 的散熱墊。
 
-• The illustrations only show the installation steps for a single M.2 slot, the steps are    
-the same for the other M.2 slots if you wish to install an M.2 to another M.2 slot. 
+• 圖示僅顯示單一 M.2 插槽的安裝步驟，如果您希望將 M.2 安裝到另一個 M.2 插槽，步驟相同。
 
-• Use a Phillips screwdriver when removing or installing the screws or screw stands    
-mentioned in this section. 
+• 移除或安裝本節中提及的螺絲或螺絲座時，請使用十字螺絲起子。
 
-• The M.2 is purchased separately.
+• M.2 需另行購買。
 
-**Chapter 2**   
-1---. Completely loosen the screws on the heatsinks. 
+**第 2 章**
+1---. 完全鬆開散熱器上的螺絲。
 
-2---. Lift and remove the heatsinks. 
+2---. 提起並取下散熱器。
 
 1 1 
 
 2 
 
-Pro WS W680-ACE Series 2-7   
-3---. Install your M.2 to your M.2 slot. The steps may differ between installing M.2 of  different lengths, please refer to the different types and their installation steps below: 
+Pro WS W680-ACE 系列 2-7
+3---. 將您的 M.2 安裝到您的 M.2 插槽。步驟可能因安裝不同長度的 M.2 而異，請參考以下不同類型及其安裝步驟：
 
-**• To install an M.2 to M.2---_1 slot** 
+**• 若要將 M.2 安裝到 M.2\_1 插槽**
 
-For 2280 length 
+適用於 2280 長度
 
-A. (optional) Install the bundled rubber for M.2 if you are installing a    
-single sided M.2 storage device. DO NOT install the bundled rubber    
-for M.2 when installing a double-sided M.2 storage device. The rubber    
-installed by default is compatible with double sided M.2 storage    
-devices. 
+A. (選用) 如果您要安裝單面 M.2 儲存裝置，請安裝隨附的 M.2 橡膠墊。安裝雙面 M.2 儲存裝置時，請勿安裝隨附的 M.2 橡膠墊。預設安裝的橡膠墊與雙面 M.2 儲存裝置相容。
 
-B. Rotate and adjust the M.2 Q-latch so that the handle points away    
-from the M.2 slot. 
+B. 旋轉並調整 M.2 Q-latch，使把手朝向 M.2 插槽的反方向。
 
-C. Install your M.2 to the M.2 slot. 
+C. 將您的 M.2 安裝到 M.2 插槽。
 
-D. Rotate the M.2 Q-Latch clockwise to secure the M.2 in place.   
-**Chapter 2**   
-**Bundled rubber for M.2**
+D. 順時針旋轉 M.2 Q-Latch 以將 M.2 固定到位。
+**第 2 章**
+**M.2 隨附橡膠**
 
-OPTIONAL 
+選用
 
-2-8 Chapter 2: Basic Installation   
-For 2242, 2260 length 
+2-8 第 2 章：基本安裝
+適用於 2242、2260 長度
 
-A. (optional) Remove the M.2 rubber. 
+A. (選用) 移除 M.2 橡膠墊。
 
-Follow this step only if you wish to install an M.2 to type 2242---. 
+僅在您希望安裝 M.2 到 2242 類型時才遵循此步驟。
 
-B. Install the bundled screw stand to the M.2 length screw hole you wish  to install your M.2 to. 
+B. 將隨附的螺絲座安裝到您希望安裝 M.2 的 M.2 長度螺絲孔。
 
-C. Install your M.2 to the M.2 slot. 
+C. 將您的 M.2 安裝到 M.2 插槽。
 
-D. Secure your M.2 using the bundled screw stand’s screw.
+D. 使用隨附的螺絲座螺絲固定您的 M.2。
 
-**Chapter 2** 
+**第 2 章**
 
-Pro WS W680-ACE Series 2-9   
-**• To install an M.2 to M.2---_2 slot** 
+Pro WS W680-ACE 系列 2-9
+**• 若要將 M.2 安裝到 M.2\_2 插槽**
 
-For 2242, 2260, 2280 length 
+適用於 2242、2260、2280 長度
 
-A. Install the bundled screw stand to the M.2 length screw hole you wish  to install your M.2 to. 
+A. 將隨附的螺絲座安裝到您希望安裝 M.2 的 M.2 長度螺絲孔。
 
-B. Install your M.2 to the M.2 slot. 
+B. 將您的 M.2 安裝到 M.2 插槽。
 
-C. Secure your M.2 using the bundled screw stand’s screw.
+C. 使用隨附的螺絲座螺絲固定您的 M.2。
 
-**Chapter 2** 
+**第 2 章**
 
-2-10 Chapter 2: Basic Installation   
-For 2242, 2260, 2280, 22110 length 
+2-10 第 2 章：基本安裝
+適用於 2242、2260、2280、22110 長度
 
-A. (optional) Remove the pre-installed removable M.2 Q-Latch screw at  the 2280 length screw hole. 
+A. (選用) 移除 2280 長度螺絲孔上預先安裝的可拆卸 M.2 Q-Latch 螺絲。
 
-B. (optional) Install the M.2 Q-Latch to the M.2 length screw hole you  wish to install your M.2 to. 
+B. (選用) 將 M.2 Q-Latch 安裝到您希望安裝 M.2 的 M.2 長度螺絲孔。
 
-Follow step A and B only when you wish to install an 2242, 2260, or 22110 length M.2. 
+僅在您希望安裝 2242、2260 或 22110 長度的 M.2 時才遵循步驟 A 和 B。
 
-C. Rotate and adjust the M.2 Q-latch so that the handle points away  from the M.2 slot. 
+C. 旋轉並調整 M.2 Q-latch，使把手朝向 M.2 插槽的反方向。
 
-D. Install your M.2 to the M.2 slot. 
+D. 將您的 M.2 安裝到 M.2 插槽。
 
-E. Rotate the M.2 Q-Latch clockwise to secure the M.2 in place.**Chapter 2** 
+E. 順時針旋轉 M.2 Q-Latch 以將 M.2 固定到位。**第 2 章**
 
-Pro WS W680-ACE Series 2-11   
-4---. Remove the plastic film from the thermal pads on the bottom of the heatsinks. 
+Pro WS W680-ACE 系列 2-11
+4---. 從散熱器底部的散熱墊上取下塑膠膜。
 
-If the thermal pad on the M.2 heatsink becomes damaged, we recommend replacing it    
-with a thermal pad with a thickness of 1.25mm. 
+如果 M.2 散熱器上的散熱墊損壞，我們建議更換為厚度為 1.25mm 的散熱墊。
 
-5---. Replace the heatsinks. 
+5---. 更換散熱器。
 
-6---. Secure the heatsinks using the screws on the heatsink. 
+6---. 使用散熱器上的螺絲固定散熱器。
 
 6 6 
 
 5 
 
-**Chapter 2**   
+**第 2 章**
 4
 
-2-12 Chapter 2: Basic Installation   
-**2.1.5 Motherboard installation**
+2-12 第 2 章：基本安裝
+**2.1.5 主機板安裝**
 
-1---. Place the motherboard into the chassis, ensuring that its rear I/O ports are aligned to  the chassis’ rear I/O panel. 
+1---. 將主機板放入機箱，確保其後置 I/O 連接埠與機箱的後置 I/O 面板對齊。
 
-**Chapter 2**   
-2---. Place nine (9) screws into the holes indicated by circles to secure the motherboard to  the chassis. 
+**第 2 章**
+2---. 將九 (9) 顆螺絲鎖入以圓圈標示的孔中，以將主機板固定到機箱。
 
 |  |
 | :---- |
 
-DO NOT over tighten the screws---! Doing so can damage the motherboard. 
+請勿過度鎖緊螺絲！這樣做可能會損壞主機板。
 
-Pro WS W680-ACE Series 2-13   
-**2.1.6 ATX power connection** 
+Pro WS W680-ACE 系列 2-13
+**2.1.6 ATX 電源連接**
 
-**Chapter 2** 
+**第 2 章**
 
-**OR AND**
+**或 和**
 
-Ensure to connect the 8-pin power plug, or both the 8-pin and 4-pin power plugs. 
+請務必連接 8-pin 電源插頭，或同時連接 8-pin 和 4-pin 電源插頭。
 
-2-14 Chapter 2: Basic Installation   
-**Chapter 2**   
-The **PCIE---_6P---_PWR** connector provides additional power for your PCIe X16 slots.
+2-14 第 2 章：基本安裝
+**第 2 章**
+**PCIE\_6P\_PWR** 連接器為您的 PCIe X16 插槽提供額外電力。
 
-Pro WS W680-ACE Series 2-15 
+Pro WS W680-ACE 系列 2-15
 
-**Chapter 2**   
-**2.1.7 SATA device connection OR**
+**第 2 章**
+**2.1.7 SATA 裝置連接 或**
 
-**2.1.8 SlimSAS connection** 
+**2.1.8 SlimSAS 連接**
 
-2-16 Chapter 2: Basic Installation   
-**2.1.9 Front I/O connector To install front panel connector** 
+2-16 第 2 章：基本安裝
+**2.1.9 前置 I/O 連接器 若要安裝前面板連接器**
 
-**To install USB 3.2 Gen 1 connector** 
+**若要安裝 USB 3.2 Gen 1 連接器**
 
 **USB 3.2 Gen 1** 
 
-**To install front panel audio connector AAFP**   
-**To install USB 3.2 Gen 2x2 Type-C®  connector** 
+**若要安裝前面板音訊連接器 AAFP**
+**若要安裝 USB 3.2 Gen 2x2 Type-C® 連接器**
 
 **USB 3.2 Gen 2x2**    
 **Type-C®** 
 
-This connector will only fit in one    
-orientation. Push the connector until it  clicks into place.
+此連接器僅能以一種方向插入。將連接器推入直到其卡入定位。
 
-**To install USB 2.0 connector USB 2.0**   
-**Chapter 2** 
+**若要安裝 USB 2.0 連接器 USB 2.0**
+**第 2 章**
 
-Pro WS W680-ACE Series 2-17 
+Pro WS W680-ACE 系列 2-17
 
-**Chapter 2**   
-**2.1.10 Expansion card installation To install PCIe x16 cards** 
+**第 2 章**
+**2.1.10 擴充卡安裝 若要安裝 PCIe x16 卡**
 
-**To install PCIe x1 cards**
+**若要安裝 PCIe x1 卡**
 
-2-18 Chapter 2: Basic Installation   
-**To install Thunderbolt**™ **series card** 
+2-18 第 2 章：基本安裝
+**若要安裝 Thunderbolt**™ **系列卡**
 
 **USB Type-C®**   
-**port connects**    
-**to Thunderbolt**    
-**devices** 
+**連接埠連接**
+**至 Thunderbolt**
+**裝置**
 
-**MiniDP in port**    
-**connects to DP**    
-**out port on the**    
-**motherboard**    
-**or a VGA card** 
+**MiniDP 輸入連接埠**
+**連接至主機板上的**
+**DP 輸出連接埠**
+**或 VGA 卡**
 
-**6-pin PCIe power connector** 
+**6-pin PCIe 電源連接器**
 
-**USB 2.0 header** 
+**USB 2.0 接頭**
 
-**Thunderbolt™ header** 
+**Thunderbolt™ 接頭**
 
-**Chapter 2** 
+**第 2 章**
 
-The Thunderbolt™ card can only be used when installed to the PCIEX16(G3)---_2 slot.  Ensure to install your Thunderbolt™ card to the PCIEX16(G3)---_2 slot. 
+Thunderbolt™ 卡只能安裝到 PCIEX16(G3)\_2 插槽才能使用。請務必將您的 Thunderbolt™ 卡安裝到 PCIEX16(G3)\_2 插槽。
 
-• Step 6 is optional, please connect a 6-pin PCIe power connector when you wish to  use the USB Type-C® port Thunderbolt™ quick charge feature to charge a 5V or  more device. 
+• 步驟 6 為選用，當您希望使用 USB Type-C® 連接埠 Thunderbolt™ 快速充電功能為 5V 或更高電壓的裝置充電時，請連接 6-pin PCIe 電源連接器。
 
-• The TypeC---_1 port can support up to 20V devices, and the TypeC---_2 port can support  up to 9V devices when the 6-pin PCIe power connector is connected. 
+• 連接 6-pin PCIe 電源連接器時，TypeC\_1 連接埠可支援最高 20V 的裝置，TypeC\_2 連接埠可支援最高 9V 的裝置。
 
-• Please visit the official website of your purchased Thunderbolt™ card for more details  on compatibility.
+• 有關相容性的更多詳細資訊，請造訪您所購買的 Thunderbolt™ 卡的官方網站。
 
-Pro WS W680-ACE Series 2-19   
-**2.1.11 M.2 Wi-Fi module and antenna installation** 
+Pro WS W680-ACE 系列 2-19
+**2.1.11 M.2 Wi-Fi 模組與天線安裝**
 
-**Installing the M.2 W-Fi Module** 
+**安裝 M.2 W-Fi 模組**
 
 2 
 
 1 
 
 4   
-**Chapter 2**   
+**第 2 章**
 3 
 
-• Ensure that the    
-ASUS Wi-Fi moving    
-antenna is securely    
-installed to the Wi-Fi    
-ports. 
+• 請確保華碩 Wi-Fi 移動天線已牢固地安裝到 Wi-Fi 連接埠。
 
 5 
 
-• Ensure that the  antenna is at least    
-20 cm away from all  persons. 
+• 請確保天線距離所有人至少 20 公分。
 
-• The illustration  to the left is for    
-reference only. The  I/O port layout may    
-vary with models,    
-but the Wi-Fi    
-antenna installation  procedure is the    
-same for all models. 
+• 左側的圖示僅供參考。I/O 連接埠配置可能因型號而異，但所有型號的 Wi-Fi 天線安裝程序均相同。
 
-• The M.2 Wi-Fi  module and antenna  are purchased  
+• M.2 Wi-Fi 模組和天線需另行購買。
 
-separately.
-
-2-20 Chapter 2: Basic Installation   
-**2.2 BIOS update utility** 
+2-20 第 2 章：基本安裝
+**2.2 BIOS 更新公用程式**
 
 **BIOS FlashBack**™ 
 
-BIOS FlashBack™ allows you to easily update the BIOS without entering the existing BIOS  or operating system.  
+BIOS FlashBack™ 可讓您輕鬆更新 BIOS，無需進入現有的 BIOS 或作業系統。
 
-**To use BIOS FlashBack™:** 
+**若要使用 BIOS FlashBack™：**
 
-1---. Visit https://www.asus.com/support/ and download the latest BIOS version for this  motherboard. 
+1---. 請造訪 https://www.asus.com/support/ 並下載此主機板的最新 BIOS 版本。
 
-2---. Manually rename the file as follows depending on your motherboard model: 
+2---. 根據您的主機板型號，手動將檔案重新命名如下：
 
-| Pro WS W680-ACE IPMI:  | PWW680AI.CAP |
+| Pro WS W680-ACE IPMI：  | PWW680AI.CAP |
 | :---- | :---- |
-| **Pro WS W680-ACE:**  | PWW680A.CAP |
+| **Pro WS W680-ACE：**  | PWW680A.CAP |
 
-or launch the **BIOSRenamer.exe** application to automatically rename the file, then  copy it to your USB storage device. 
+或啟動 **BIOSRenamer.exe** 應用程式以自動重新命名檔案，然後將其複製到您的 USB 儲存裝置。
 
-The **BIOSRenamer.exe** application is zipped together with your BIOS file when you    
-**Chapter 2**   
-download a BIOS file for a BIOS FlashBack™ compatible motherboard.  
+當您下載支援 BIOS FlashBack™ 的主機板的 BIOS 檔案時，**BIOSRenamer.exe** 應用程式會與您的 BIOS 檔案一起壓縮。
 
-3---. Plug the 24-pin power connector to the motherboard and turn on the power supply  (no need to power on the system). Insert the USB storage device to the BIOS  
+3---. 將 24-pin 電源連接器插入主機板並開啟電源供應器（無需開啟系統電源）。將 USB 儲存裝置插入 BIOS FlashBack™ 連接埠。
 
-FlashBack™ port. 
+4---. 按住 BIOS FlashBack™ 按鈕三 (3) 秒，直到 BIOS FlashBack™ LED 閃爍三次，表示 BIOS FlashBack™ 功能已啟用。
 
-4---. Press the BIOS FlashBack™ button for three (3) seconds until the BIOS FlashBack™  LED blinks three times, indicating that the BIOS FlashBack™ function is enabled. 
+**BIOS FlashBack™ 連接埠 BIOS FlashBack™ 按鈕**
 
-**BIOS FlashBack™ port BIOS FlashBack™ button** 
+5---. 等待指示燈熄滅，表示 BIOS 更新程序已完成。
 
-5---. Wait until the light goes out, indicating that the BIOS updating process is completed. 
+有關 BIOS 設定中的更多 BIOS 更新公用程式，請參閱第 3 章的 **更新 BIOS** 部分。
 
-For more BIOS update utilities in BIOS setup, refer to the section **Updating BIOS** in    
-Chapter 3---. 
+• BIOS 更新期間，請勿拔除可攜式磁碟、電源系統或短路 CLR\_CMOS 接頭，否則更新將會中斷。如果發生中斷，請再次執行這些步驟。
 
-• Do not unplug portable disk, power system, or short the CLR---_CMOS header while    
-BIOS update is ongoing, otherwise update will be interrupted. In case of interruption,    
-please follow the steps again. 
+• 如果指示燈閃爍五秒後變為恆亮，表示 BIOS FlashBack™ 運作不正常。這可能是由於 USB 儲存裝置安裝不當以及檔名/檔案格式錯誤所致。如果發生此情況，請重新啟動系統以關閉指示燈。
 
-• If the light flashes for five seconds and turns into a solid light, this means that the    
-BIOS FlashBack™ is not operating properly. This may be caused by improper    
-installation of the USB storage device and filename/file format error. If this scenario    
-happens, please restart the system to turn off the light.  
+• 更新 BIOS 可能存在風險。如果在過程中 BIOS 程式損壞導致系統無法開機，請聯繫您當地的華碩服務中心。
 
-• Updating BIOS may have risks. If the BIOS program is damaged during the process    
-and results to the system’s failure to boot up, please contact your local ASUS Service  
-
-Center.
-
-Pro WS W680-ACE Series 2-21   
-For more information on using the BIOS FlashBack™ feature, please refer to  https://www.asus.com/support/, or by scanning the QR code below.
+Pro WS W680-ACE 系列 2-21
+有關使用 BIOS FlashBack™ 功能的更多資訊，請參閱 https://www.asus.com/support/，或掃描下方的 QR 碼。
 
 ![][image4]
 
-**Chapter 2** 
+**第 2 章**
 
-2-22 Chapter 2: Basic Installation   
-**2.3 Motherboard rear and audio connections** 
+2-22 第 2 章：基本安裝
+**2.3 主機板後方與音訊連接**
 
-**2.3.1 Rear I/O connection** 
+**2.3.1 後方 I/O 連接**
 
-**Chapter 2** 
+**第 2 章**
 
-| Rear panel connectors  1---. DisplayPort |
+| 後面板連接器  1---. DisplayPort |
 | :---- |
-| 2---. USB 2.0 ports 11 and 12 |
-| 3---. Intel® 2.5Gb Ethernet ports---* |
-| 4---. HDMI® port |
-| 5---. VGA port |
-| 6---. USB 3.2 Gen 1 Type-A ports 5 and 6 |
-| 7---. USB 3.2 Gen 1 Type-A ports 3 and 4 |
-| 8---. USB 3.2 Gen 2 Type-A port 2 |
-| 9---. USB 3.2 Gen 2 Type-C® port C1 |
-| 10---. BIOS FlashBack™ button |
-| 11---. Audio jacks---*---* |
+| 2---. USB 2.0 連接埠 11 和 12 |
+| 3---. Intel® 2.5Gb 乙太網路連接埠---* |
+| 4---. HDMI® 連接埠 |
+| 5---. VGA 連接埠 |
+| 6---. USB 3.2 Gen 1 Type-A 連接埠 5 和 6 |
+| 7---. USB 3.2 Gen 1 Type-A 連接埠 3 和 4 |
+| 8---. USB 3.2 Gen 2 Type-A 連接埠 2 |
+| 9---. USB 3.2 Gen 2 Type-C® 連接埠 C1 |
+| 10---. BIOS FlashBack™ 按鈕 |
+| 11---. 音訊插孔---*---* |
 
-**---* and ---*---* : Refer to the tables on the next page for LAN port LEDs, and audio port definitions.** 
+**---* 和 ---*---*：有關 LAN 埠 LED 和音訊埠定義，請參閱下一頁的表格。**
 
-We strongly recommend that you connect your devices to ports with matching data    
-transfer rate. For example connecting your USB 3.2 Gen 1 devices to USB 3.2 Gen 1  
+我們強烈建議您將裝置連接到具有相符資料傳輸速率的連接埠。例如，將您的 USB 3.2 Gen 1 裝置連接到 USB 3.2 Gen 1 連接埠，以獲得更快、更好的裝置效能。
 
-ports for faster and better performance for your devices.
-
-Pro WS W680-ACE Series 2-23   
-**---* Intel® 2.5Gb Ethernet port LED indications** 
+Pro WS W680-ACE 系列 2-23
+**---* Intel® 2.5Gb 乙太網路埠 LED 指示**
 
 **ACT/LINK**  
 
-| Activity Link LED |  |  | Speed LED |  |
+| 活動連結 LED |  |  | 速度 LED |  |
 | :---- | ----- | :---- | :---- | :---- |
-| **Status**  | **Description** |  | **Status** |  **Description** |
-| OFF  | No link |  | OFF |  No link |
-| GREEN  | Linked |  | OFF  | 100 Mbps / 10 Mbps  connection |
-| BLINKING |  Data activity |  |  |  |
-|  |  |  | GREEN |  2.5 Gbps connection |
-|  |  |  | ORANGE |  1 Gbps connection |
+| **狀態**  | **說明** |  | **狀態** |  **說明** |
+| 關閉  | 無連結 |  | 關閉 |  無連結 |
+| 綠色  | 已連結 |  | 關閉  | 100 Mbps / 10 Mbps 連線 |
+| 閃爍 |  資料活動 |  |  |  |
+|  |  |  | 綠色 |  2.5 Gbps 連線 |
+|  |  |  | 橘色 |  1 Gbps 連線 |
 
-**---*---* Audio 2, 4, 5.1 or 7.1-channel configuration**  
-**LED SPEED  LED** 
+**---*---* 音訊 2、4、5.1 或 7.1 聲道組態**
+**LED 速度 LED**
 
-**LAN port** 
+**LAN 埠**
 
-| Port |  2-channel |  4-channel |  5.1-channel |  7.1-channel |
+| 連接埠 |  2 聲道 |  4 聲道 |  5.1 聲道 |  7.1 聲道 |
 | ----- | :---: | :---: | :---: | :---: |
-| Light Blue (Rear panel)  | ----  | ----  | ----  | Side Speaker Out |
-| Lime  (Rear panel) | Front Speaker Out | Front Speaker Out | Front Speaker Out | Front Speaker Out |
-| Pink(Rear panel)  | ----  | ----  | ----  | ---- |
-| Black(Rear panel)  | ----  | Rear Speaker Out | Rear Speaker Out | Rear Speaker Out |
-| Orange (Rear panel)  | ----  | ----  | Center/ Subwoofer | Center/ Subwoofer |
+| 淺藍色 (後面板)  | ----  | ----  | ----  | 側邊喇叭輸出 |
+| 萊姆色 (後面板) | 前置喇叭輸出 | 前置喇叭輸出 | 前置喇叭輸出 | 前置喇叭輸出 |
+| 粉紅色 (後面板)  | ----  | ----  | ----  | ---- |
+| 黑色 (後面板)  | ----  | 後置喇叭輸出 | 後置喇叭輸出 | 後置喇叭輸出 |
+| 橘色 (後面板)  | ----  | ----  | 中央/重低音 | 中央/重低音 |
 
-**Chapter 2** 
+**第 2 章**
 
-2-24 Chapter 2: Basic Installation   
-**2.3.2 Audio I/O connections Audio I/O ports** 
+2-24 第 2 章：基本安裝
+**2.3.2 音訊 I/O 連接 音訊 I/O 連接埠**
 
-**Connect to Headphone and Mic Connect to 2-channel Speakers** 
+**連接至耳機和麥克風 連接至 2 聲道喇叭**
 
-**Connect to 4-channel Speakers**
+**連接至 4 聲道喇叭**
 
-**Chapter 2** 
+**第 2 章**
 
-Pro WS W680-ACE Series 2-25 
+Pro WS W680-ACE 系列 2-25
 
-**Chapter 2**   
-**Connect to 5.1-channel Speakers Connect to 7.1-channel Speakers**
+**第 2 章**
+**連接至 5.1 聲道喇叭 連接至 7.1 聲道喇叭**
 
-2-26 Chapter 2: Basic Installation   
-**2.4 Starting up for the first time** 
+2-26 第 2 章：基本安裝
+**2.4 首次啟動**
 
-1---. After making all the connections, replace the system case cover.  
+1---. 完成所有連接後，裝回系統機殼蓋。
 
-2---. Ensure that all switches are off. 
+2---. 確保所有開關均已關閉。
 
-3---. Connect the power cord to the power connector at the back of the system chassis. 4---. Connect the power cord to a power outlet that is equipped with a surge protector. 5---. Turn on the devices in the following order: 
+3---. 將電源線連接到系統機箱背面的電源連接器。 4---. 將電源線連接到配備突波保護器的電源插座。 5---. 依序開啟下列裝置：
 
-a. Monitor 
+a. 顯示器
 
-b. External storage devices (starting with the last device on the chain) 
+b. 外部儲存裝置（從鏈上的最後一個裝置開始）
 
-c. System power 
+c. 系統電源
 
-6---. After applying power, the system power LED on the system front panel case lights  up. For systems with ATX power supplies, the system LED lights up when you press  the ATX power button. If your monitor complies with the “green” standards or if it has    
-**Chapter 2**   
-a “power standby” feature, the monitor LED may light up or change from orange to  green after the system LED turns on. 
+6---. 接通電源後，系統前面板機殼上的系統電源 LED 會亮起。對於配備 ATX 電源供應器的系統，當您按下 ATX 電源按鈕時，系統 LED 會亮起。如果您的顯示器符合「綠色」標準或具有「電源待機」功能，則在系統 LED 開啟後，顯示器 LED 可能會亮起或從橘色變為綠色。
 
-The system then runs the power-on self tests (POST). While the tests are running,  the BIOS beeps (refer to the BIOS beep codes table) or additional messages appear  on the screen. If you do not see anything within 30 seconds from the time you turned  on the power, the system may have failed a power-on test. Check the jumper settings  and connections or call your retailer for assistance. 
+系統接著會執行開機自我測試 (POST)。在測試執行期間，BIOS 會發出嗶聲（請參閱 BIOS 嗶聲代碼表）或螢幕上會出現其他訊息。如果您在開啟電源後 30 秒內沒有看到任何東西，則系統可能已通過開機測試。請檢查跳線設定和連接，或聯繫您的零售商尋求協助。
 
-| BIOS Beep  One short beep | Description  VGA detected  Quick boot set to disabled   No keyboard detected  |
+| BIOS 嗶聲  一聲短嗶 | 說明  偵測到 VGA  快速開機設定為停用   未偵測到鍵盤  |
 | :---- | :---- |
-| One continuous beep followed by two short  beeps then a pause (repeated)  | No memory detected |
-| One continuous beep followed by three short  beeps  | No VGA detected |
-| One continuous beep followed by four short  beeps  | Hardware component failure |
+| 一聲長嗶，接著兩聲短嗶，然後暫停（重複）  | 未偵測到記憶體 |
+| 一聲長嗶，接著三聲短嗶  | 未偵測到 VGA |
+| 一聲長嗶，接著四聲短嗶  | 硬體元件故障 |
 
-7---. At power on, hold down the ---<Delete---> key to enter the BIOS Setup. Follow the  instructions in Chapter 3---. 
+7---. 開機時，按住 ---<Delete---> 鍵以進入 BIOS 設定。請遵循第 3 章中的說明。
 
-**2.5 Turning off the computer** 
+**2.5 關閉電腦**
 
-While the system is ON, press the power button for less than four seconds to put the system  on sleep mode or soft-off mode, depending on the BIOS setting. Press the power button  for more than four seconds to let the system enter the soft-off mode regardless of the BIOS  setting.
+系統開啟時，按下電源按鈕少於四秒，可將系統置於睡眠模式或軟關機模式，視 BIOS 設定而定。按下電源按鈕超過四秒，無論 BIOS 設定為何，都會讓系統進入軟關機模式。
 
-Pro WS W680-ACE Series 2-27   
-**Chapter 2**
+Pro WS W680-ACE 系列 2-27
+**第 2 章**
 
-2-28 Chapter 2: Basic Installation   
-**Chapter 3: BIOS and RAID Support**   
-**BIOS and RAID Support** 3 
+2-28 第 2 章：基本安裝
+**第 3 章：BIOS 與 RAID 支援**
+**BIOS 與 RAID 支援** 3
 
-**3.1 Knowing BIOS** 
+**3.1 認識 BIOS**
 
-The new ASUS UEFI BIOS is a Unified Extensible Interface that complies with UEFI  
+全新的華碩 UEFI BIOS 是一種符合 UEFI 架構的統一可延伸介面，提供超越傳統僅限鍵盤 BIOS 控制的友善介面，可實現更靈活、更方便的滑鼠輸入。您可以像操作作業系統一樣輕鬆地瀏覽全新的 UEFI BIOS。除非另有說明，否則本使用者手冊中的「BIOS」一詞係指「UEFI BIOS」。
 
-architecture, offering a user-friendly interface that goes beyond the traditional keyboard   
-only BIOS controls to enable a more flexible and convenient mouse input. You can easily    
-navigate the new UEFI BIOS with the same smoothness as your operating system. The    
-term “BIOS” in this user manual refers to “UEFI BIOS” unless otherwise specified. 
+BIOS（基本輸入輸出系統）將系統硬體設定（例如儲存裝置組態、超頻設定、進階電源管理和開機裝置組態）儲存在主機板 CMOS 中，這些設定是系統啟動所必需的。在正常情況下，預設的 BIOS 設定適用於大多數情況，以確保最佳效能。**請勿變更預設的 BIOS 設定**，除非出現以下情況：
 
-BIOS (Basic Input and Output System) stores system hardware settings such as storage  device configuration, overclocking settings, advanced power management, and boot  device configuration that are needed for system startup in the motherboard CMOS. In  normal circumstances, the default BIOS settings apply to most conditions to ensure  optimal performance. **DO NOT change the default BIOS settings** except in the following  circumstances:  
+• 系統開機期間螢幕上出現錯誤訊息，要求您執行 BIOS 設定。
 
-• An error message appears on the screen during the system bootup and requests you  to run the BIOS Setup. 
+• 您已安裝需要進一步 BIOS 設定或更新的新系統組件。
 
-• You have installed a new system component that requires further BIOS settings or  update. 
+不當的 BIOS 設定可能會導致不穩定或開機失敗。**我們強烈建議您僅在受過訓練的維修人員的協助下變更 BIOS 設定**。
 
-Inappropriate BIOS settings may result to instability or boot failure. **We strongly**    
-**recommend that you change the BIOS settings only with the help of a trained**    
-**Chapter 3**   
-**service personnel**. 
+BIOS 設定和選項可能因 BIOS 發行版本不同而異。有關設定和選項，請參閱最新的 BIOS 版本。
 
-BIOS settings and options may vary due to different BIOS release versions. Please refer    
-to the latest BIOS version for settings and options. 
+如需有關 BIOS 組態的更多資訊，請參閱 https://www.asus.com/support/，或掃描 QR 碼下載 BIOS 手冊。
 
-For more information on BIOS configurations, please refer to    
-https://www.asus.com/support, or download the BIOS manual  
+Pro WS W680-ACE 系列 3-1
+**3.2 BIOS 設定程式**
 
-by scanning the QR code.
+使用 BIOS 設定來更新 BIOS 或設定其參數。BIOS 畫面包含導覽鍵和簡短的螢幕說明，可引導您使用 BIOS 設定程式。
 
-Pro WS W680-ACE Series 3-1   
-**3.2 BIOS setup program** 
+**開機時進入 BIOS**
 
-Use the BIOS Setup to update the BIOS or configure its parameters. The BIOS screen  include navigation keys and brief onscreen help to guide you in using the BIOS Setup  program. 
+若要在開機時進入 BIOS 設定，請在開機自我測試 (POST) 期間按下 ---<Delete---> 或 ---<F2--->。如果您未按下 ---<Delete---> 或 ---<F2--->，POST 會繼續執行其常式。
 
-**Entering BIOS at startup** 
+**POST 後進入 BIOS 設定**
 
-To enter BIOS Setup at startup, press ---<Delete---> or ---<F2---> during the Power-On Self Test  (POST). If you do not press ---<Delete---> or ---<F2--->, POST continues with its routines. 
+若要在 POST 後進入 BIOS 設定：
 
-**Entering BIOS Setup after POST** 
+• 同時按下 ---<Ctrl--->+---<Alt--->+---<Delete--->。
 
-To enter BIOS Setup after POST: 
+• 按下系統機箱上的重設按鈕。
 
-• Press ---<Ctrl--->+---<Alt--->+---<Delete---> simultaneously. 
+• 按下電源按鈕以關閉系統，然後再開啟。只有在前兩個選項無法進入 BIOS 設定時才執行此選項。
 
-• Press the reset button on the system chassis. 
+執行這三個選項中的任何一個後，按下 ---<Delete---> 鍵以進入 BIOS。
 
-• Press the power button to turn the system off then back on. Do this option only if you  failed to enter BIOS Setup using the first two options. 
+• 如果您想使用滑鼠控制 BIOS 設定程式，請確保 USB 滑鼠已連接到您的主機板。
 
-After doing either of the three options, press ---<Delete---> key to enter BIOS. 
+• 如果變更任何 BIOS 設定後系統變得不穩定，請載入預設設定以確保系統相容性和穩定性。在 **離開** 選單下選取 **載入最佳化預設值** 項目或按下快速鍵 **---<F5--->**。
 
-• Ensure that a USB mouse is connected to your motherboard if you want to use the    
-mouse to control the BIOS setup program. 
+• 如果變更任何 BIOS 設定後系統無法開機，請嘗試清除 CMOS 並將主機板重設為預設值。
 
-• If the system becomes unstable after changing any BIOS setting, load the default    
-settings to ensure system compatibility and stability. Select the **Load Optimized**    
-**Defaults** item under the **Exit** menu or press hotkey **---<F5--->**. 
+• BIOS 設定程式不支援藍牙裝置。
+**第 3 章**
+**BIOS 選單畫面**
 
-• If the system fails to boot after changing any BIOS setting, try to clear the CMOS and  reset the motherboard to the default value. 
+BIOS 設定程式可在兩種模式下使用：**EZ 模式** 和 **進階模式**。您可以從 **開機選單** 中的 **設定模式** 變更模式，或按下 ---<F7---> 快速鍵。
 
-• The BIOS setup program does not support Bluetooth devices.   
-**Chapter 3**   
-**BIOS menu screen** 
+3-2 第 3 章：BIOS 設定
+**3.3 華碩 EZ Flash 3**
 
-The BIOS Setup program can be used under two modes: **EZ Mode** and **Advanced Mode**.  You can change modes from **Setup Mode** in **Boot menu** or by pressing the ---<F7---> hotkey.
+華碩 EZ Flash 3 功能可讓您更新 BIOS，無需使用作業系統為基礎的公用程式。
 
-3-2 Chapter 3: BIOS Setup   
-**3.3 ASUS EZ Flash 3** 
+務必載入 BIOS 預設設定，以確保系統相容性和穩定性。在 **離開** 選單下選取 **載入最佳化預設值** 項目，或按下快速鍵 **---<F5--->**。
 
-The ASUS EZ Flash 3 feature allows you to update the BIOS without using an OS‑based  utility. 
+**若要更新 BIOS：**
 
-Ensure to load the BIOS default settings to ensure system compatibility and stability.    
-Select the **Load Optimized Defaults** item under the **Exit** menu or press hotkey **---<F5--->**. 
+• 此功能僅支援 FAT 32/16 格式且單一分割區的裝置，例如 USB 隨身碟。
 
-**To update the BIOS:** 
+• 更新 BIOS 時，請勿關閉或重設系統，以免系統開機失敗！
 
-• This function can support devices such as a USB flash disk with FAT 32/16 format    
-and single partition only. 
+1---. 將包含最新 BIOS 檔案的 USB 隨身碟插入 USB 連接埠。
 
-• DO NOT shut down or reset the system while updating the BIOS to prevent system    
-boot failure---! 
+2---. 進入 BIOS 設定程式的進階模式。前往 **工具** 選單，選取 **華碩 EZ Flash 3 公用程式** 並按下 ---<Enter--->。
 
-1---. Insert the USB flash disk that contains the latest BIOS file to the USB port. 
+3---. 按下向左箭頭鍵以切換至 **磁碟機** 欄位。
 
-2---. Enter the Advanced Mode of the BIOS setup program. Go to the **Tool** menu to select  **ASUS EZ Flash 3 Utility** and press ---<Enter--->. 
+4---. 按下上/下箭頭鍵以尋找包含最新 BIOS 的 USB 隨身碟，然後按下 ---<Enter--->。
 
-3---. Press the Left arrow key to switch to the **Drive** field. 
+5---. 按下向右箭頭鍵以切換至 **資料夾** 欄位。
 
-4---. Press the Up/Down arrow keys to find the USB flash disk that contains the latest  BIOS, and then press ---<Enter--->.  
+6---. 按下上/下箭頭鍵以尋找 BIOS 檔案，然後按下 ---<Enter---> 以執行 BIOS 更新程序。更新程序完成後重新啟動系統。
 
-5---. Press the Right arrow key to switch to the **Folder** field. 
+**第 3 章**
 
-6---. Press the Up/Down arrow keys to find the BIOS file, and then press ---<Enter---> to  perform the BIOS update process. Reboot the system when the update process is  done.
+Pro WS W680-ACE 系列 3-3
+**3.4 華碩 CrashFree BIOS 3**
 
-**Chapter 3** 
+華碩 CrashFree BIOS 3 公用程式是一種自動復原工具，可讓您在更新過程中 BIOS 檔案失敗或損毀時還原 BIOS 檔案。您可以使用包含 BIOS 檔案的 USB 隨身碟還原損毀的 BIOS 檔案。
 
-Pro WS W680-ACE Series 3-3   
-**3.4 ASUS CrashFree BIOS 3** 
+**還原 BIOS**
 
-The ASUS CrashFree BIOS 3 utility is an auto recovery tool that allows you to restore the  BIOS file when it fails or gets corrupted during the updating process. You can restore a  corrupted BIOS file using a USB flash drive that contains the BIOS file. 
+1---. 從 https://www.asus.com/support/ 下載此主機板的最新 BIOS 版本。
 
-**Recovering the BIOS** 
+2---. 將 BIOS 檔案重新命名為 **asus.cap** 或 **PWW680AI.cap**，然後將重新命名的 BIOS 檔案複製到 USB 隨身碟。
 
-1---. Download the latest BIOS version for this motherboard from https://www.asus.com/ support/. 
+3---. 開啟系統。
 
-2---. Rename the BIOS file as **asus.cap** or **PWW680AI.cap** and copy the renamed BIOS  file to a USB flash drive. 
+4---. 將包含 BIOS 檔案的 USB 隨身碟插入 USB 連接埠。
 
-3---. Turn on the system. 
+5---. 公用程式會自動檢查裝置是否有 BIOS 檔案。找到後，公用程式會讀取 BIOS 檔案並自動進入華碩 EZ Flash 3。
 
-4---. Insert the USB flash drive containing the BIOS file to a USB port. 
+6---. 系統會要求您進入 BIOS 設定以還原 BIOS 設定。為確保系統相容性和穩定性，我們建議您按下 ---<F5---> 以載入預設 BIOS 值。
 
-5---. The utility automatically checks the devices for the BIOS file. When found, the utility  reads the BIOS file and enters ASUS EZ Flash 3 automatically. 
+更新 BIOS 時請勿關閉或重設系統！這樣做可能會導致系統開機失敗！
 
-6---. The system requires you to enter BIOS Setup to recover the BIOS setting. To ensure  system compatibility and stability, we recommend that you press ---<F5---> to load default  BIOS values. 
+**第 3 章**
 
-DO NOT shut down or reset the system while updating the BIOS---! Doing so can cause  
+3-4 第 3 章：BIOS 設定
+**3.5 RAID 組態**
 
-system boot failure---!
+主機板配備 Intel® 快速儲存技術，支援 PCIe RAID 0/1/5/10 和 SATA RAID 0/1/5/10 組態。
 
-**Chapter 3** 
+如需有關設定 RAID 集的更多資訊，請參閱 **RAID 組態指南**，您可以在 https://www.asus.com/support 找到，或掃描 QR 碼。
 
-3-4 Chapter 3: BIOS Setup   
-**3.5 RAID configurations** 
+**RAID 定義**
 
-The motherboard comes with the Intel® Rapid Storage Technology that supports PCIe RAID  0/1/5/10 and SATA RAID 0/1/5/10 configurations. 
+**RAID 0（資料分段）** 會最佳化兩個相同的硬碟，以平行、交錯堆疊的方式讀取和寫入資料。兩個硬碟執行與單一磁碟機相同的工作，但持續資料傳輸速率是單一磁碟機的兩倍，因此可改善資料存取和儲存。此設定需要使用兩個全新的相同硬碟。 **RAID 1（資料鏡像）** 會將資料的相同映像從一個磁碟機複製並維護到第二個磁碟機。如果一個磁碟機故障，磁碟陣列管理軟體會將所有應用程式導向到倖存的磁碟機，因為它包含另一個磁碟機中資料的完整副本。此 RAID 組態提供資料保護並提高整個系統的容錯能力。此設定請使用兩個新磁碟機或使用一個現有磁碟機和一個新磁碟機。新磁碟機的大小必須與現有磁碟機相同或更大。
 
-For more information on configuring your RAID sets, please    
-refer to the **RAID Configuration Guide** which you can find at  
+**RAID 5** 會將資料和同位檢查資訊分段到三個或更多硬碟。RAID 5 組態的優點包括更好的硬碟效能、容錯能力和更高的儲存容量。RAID 5 組態最適合交易處理、關聯式資料庫應用程式、企業資源規劃和其他業務系統。此設定至少需要三個相同的硬碟。 **RAID 10** 是資料分段和資料鏡像的結合，無需計算和寫入同位檢查（備援資料）。透過 RAID 10 組態，您可以獲得 RAID 0 和 RAID 1 組態的所有優點。此設定請使用四個新硬碟或使用一個現有磁碟機和三個新磁碟機。 **第 3 章**
+Pro WS W680-ACE 系列 3-5
+**第 3 章**
 
-https://www.asus.com/support, or by scanning the QR code.
+3-6 第 3 章：BIOS 設定
+**附錄**
 
-**RAID definitions** 
+**附錄**
 
-**RAID 0 (Data striping)** optimizes two identical hard disk drives to read and write data in  parallel, interleaved stacks. Two hard disks perform the same work as a single drive but at a  sustained data transfer rate, double that of a single disk alone, thus improving data access  and storage. Use of two new identical hard disk drives is required for this setup. **RAID 1 (Data mirroring)** copies and maintains an identical image of data from one drive to  a second drive. If one drive fails, the disk array management software directs all applications  to the surviving drive as it contains a complete copy of the data in the other drive. This RAID  configuration provides data protection and increases fault tolerance to the entire system.  Use two new drives or use an existing drive and a new drive for this setup. The new drive  must be of the same size or larger than the existing drive. 
+**Q-Code 表**
 
-**RAID 5** stripes both data and parity information across three or more hard disk drives.  Among the advantages of RAID 5 configuration include better HDD performance, fault  tolerance, and higher storage capacity. The RAID 5 configuration is best suited for  transaction processing, relational database applications, enterprise resource planning, and  other business systems. Use a minimum of three identical hard disk drives for this setup. **RAID 10** is data striping and data mirroring combined without parity (redundancy data)  **Chapter 3**   
-having to be calculated and written. With the RAID 10 configuration you get all the benefits  of both RAID 0 and RAID 1 configurations. Use four new hard disk drives or use an existing  drive and three new drives for this setup. 
-
-Pro WS W680-ACE Series 3-5   
-**Chapter 3**
-
-3-6 Chapter 3: BIOS Setup   
-**Appendix** 
-
-**Appendix** 
-
-**Q-Code table** 
-
-| Code |  Description |
+| 代碼 |  說明 |
 | :---- | :---- |
-| **00**  | Not used |
-| **01**  | Power on. Reset type detection (soft/hard). |
-| **02**  | AP initialization before microcode loading |
-| **03**  | System Agent initialization before microcode loading |
-| **04**  | PCH initialization before microcode loading |
-| **06**  | Microcode loading |
-| **07**  | AP initialization after microcode loading |
-| **08**  | System Agent initialization after microcode loading |
-| **09**  | PCH initialization after microcode loading |
-| **0B**  | Cache initialization |
-| **0C – 0D**  | Reserved for future AMI SEC error codes |
-| **0E**  | Microcode not found |
-| **0F**  | Microcode not loaded |
-| **10**  | PEI Core is started |
-| **11 – 14**  | Pre-memory CPU initialization is started |
-| **15 – 18**  | Pre-memory System Agent initialization is started  |
-| **19 – 1C**  | Pre-memory PCH initialization is started |
-| **2B – 2F**  | Memory initialization |
-| **30**  | Reserved for ASL (see ASL Status Codes section below) |
-| **31**  | Memory Installed |
-| **32 – 36**  | CPU post-memory initialization |
-| **37 – 3A**  | Post-Memory System Agent initialization is started |
-| **3B – 3E**  | Post-Memory PCH initialization is started |
-| **4F**  | DXE IPL is started |
-| **50 – 53**  | Memory initialization error. Invalid memory type or incompatible memory speed |
-| **54**  | Unspecified memory initialization error |
-| **55**  | Memory not installed |
-| **56**  | Invalid CPU type or Speed |
-| **57**  | CPU mismatch |
-| **58**  | CPU self test failed or possible CPU cache error |
-| **59**  | CPU micro-code is not found or micro-code update is failed |
-| **5A**  | Internal CPU error |
-| **5B**  | Reset PPI is not available |
-| **5C – 5F**  | Reserved for future AMI error codes |
+| **00**  | 未使用 |
+| **01**  | 開啟電源。重設類型偵測（軟/硬）。 |
+| **02**  | 微碼載入前的 AP 初始化 |
+| **03**  | 微碼載入前的系統代理程式初始化 |
+| **04**  | 微碼載入前的 PCH 初始化 |
+| **06**  | 微碼載入 |
+| **07**  | 微碼載入後的 AP 初始化 |
+| **08**  | 微碼載入後的系統代理程式初始化 |
+| **09**  | 微碼載入後的 PCH 初始化 |
+| **0B**  | 快取初始化 |
+| **0C – 0D**  | 保留供未來 AMI SEC 錯誤碼使用 |
+| **0E**  | 未找到微碼 |
+| **0F**  | 微碼未載入 |
+| **10**  | PEI 核心已啟動 |
+| **11 – 14**  | 記憶體前 CPU 初始化已啟動 |
+| **15 – 18**  | 記憶體前系統代理程式初始化已啟動  |
+| **19 – 1C**  | 記憶體前 PCH 初始化已啟動 |
+| **2B – 2F**  | 記憶體初始化 |
+| **30**  | 保留供 ASL 使用 (請參閱下方的 ASL 狀態碼部分) |
+| **31**  | 記憶體已安裝 |
+| **32 – 36**  | CPU 記憶體後初始化 |
+| **37 – 3A**  | 記憶體後系統代理程式初始化已啟動 |
+| **3B – 3E**  | 記憶體後 PCH 初始化已啟動 |
+| **4F**  | DXE IPL 已啟動 |
+| **50 – 53**  | 記憶體初始化錯誤。記憶體類型無效或記憶體速度不相容 |
+| **54**  | 未指定的記憶體初始化錯誤 |
+| **55**  | 未安裝記憶體 |
+| **56**  | CPU 類型或速度無效 |
+| **57**  | CPU 不符 |
+| **58**  | CPU 自我測試失敗或可能的 CPU 快取錯誤 |
+| **59**  | 未找到 CPU 微碼或微碼更新失敗 |
+| **5A**  | 內部 CPU 錯誤 |
+| **5B**  | 重設 PPI 不可用 |
+| **5C – 5F**  | 保留供未來 AMI 錯誤碼使用 |
 
-**Appendix** 
+**附錄**
 
-(continued on the next page)
+(續下頁)
 
-Pro WS W680-ACE Series A-1   
-**Q-Code table** 
+Pro WS W680-ACE 系列 A-1
+**Q-Code 表**
 
-| Code |  Description |
+| 代碼 |  說明 |
 | :---- | :---- |
-| **E0**  | S3 Resume is stared (S3 Resume PPI is called by the DXE IPL) |
-| **E1**  | S3 Boot Script execution |
-| **E2**  | Video repost |
-| **E3**  | OS S3 wake vector call |
-| **E4 – E7**  | Reserved for future AMI progress codes |
-| **E8**  | S3 Resume Failed |
-| **E9**  | S3 Resume PPI not Found |
-| **EA**  | S3 Resume Boot Script Error |
-| **EB**  | S3 OS Wake Error |
-| **EC – EF**  | Reserved for future AMI error codes |
-| **F0**  | Recovery condition triggered by firmware (Auto recovery) |
-| **F1**  | Recovery condition triggered by user (Forced recovery) |
-| **F2**  | Recovery process started |
-| **F3**  | Recovery firmware image is found |
-| **F4**  | Recovery firmware image is loaded |
-| **F5 – F7**  | Reserved for future AMI progress codes |
-| **F8**  | Recovery PPI is not available |
-| **F9**  | Recovery capsule is not found |
-| **FA**  | Invalid recovery capsule |
-| **FB – FF**  | Reserved for future AMI error codes |
-| **60**  | DXE Core is started |
-| **61**  | NVRAM initialization |
-| **62**  | Installation of the PCH Runtime Services |
-| **63 – 67**  | CPU DXE initialization is started |
-| **68**  | PCI host bridge initialization |
-| **69**  | System Agent DXE initialization is started |
-| **6A**  | System Agent DXE SMM initialization is started |
-| **6B – 6F**  | System Agent DXE initialization (System Agent module specific) |
-| **70**  | PCH DXE initialization is started |
-| **71**  | PCH DXE SMM initialization is started |
-| **72**  | PCH devices initialization |
-| **73 – 77**  | PCH DXE Initialization (PCH module specific) |
-| **78**  | ACPI module initialization |
-| **79**  | CSM initialization |
-| **7A – 7F**  | Reserved for future AMI DXE codes |
+| **E0**  | S3 恢復已開始 (DXE IPL 已呼叫 S3 恢復 PPI) |
+| **E1**  | S3 開機腳本執行 |
+| **E2**  | 視訊重新張貼 |
+| **E3**  | 作業系統 S3 喚醒向量呼叫 |
+| **E4 – E7**  | 保留供未來 AMI 進度碼使用 |
+| **E8**  | S3 恢復失敗 |
+| **E9**  | 未找到 S3 恢復 PPI |
+| **EA**  | S3 恢復開機腳本錯誤 |
+| **EB**  | S3 作業系統喚醒錯誤 |
+| **EC – EF**  | 保留供未來 AMI 錯誤碼使用 |
+| **F0**  | 韌體觸發的復原條件 (自動復原) |
+| **F1**  | 使用者觸發的復原條件 (強制復原) |
+| **F2**  | 復原程序已啟動 |
+| **F3**  | 已找到復原韌體映像 |
+| **F4**  | 復原韌體映像已載入 |
+| **F5 – F7**  | 保留供未來 AMI 進度碼使用 |
+| **F8**  | 復原 PPI 不可用 |
+| **F9**  | 未找到復原膠囊 |
+| **FA**  | 復原膠囊無效 |
+| **FB – FF**  | 保留供未來 AMI 錯誤碼使用 |
+| **60**  | DXE 核心已啟動 |
+| **61**  | NVRAM 初始化 |
+| **62**  | PCH 執行階段服務的安裝 |
+| **63 – 67**  | CPU DXE 初始化已啟動 |
+| **68**  | PCI 主機橋接器初始化 |
+| **69**  | 系統代理程式 DXE 初始化已啟動 |
+| **6A**  | 系統代理程式 DXE SMM 初始化已啟動 |
+| **6B – 6F**  | 系統代理程式 DXE 初始化 (系統代理程式模組特定) |
+| **70**  | PCH DXE 初始化已啟動 |
+| **71**  | PCH DXE SMM 初始化已啟動 |
+| **72**  | PCH 裝置初始化 |
+| **73 – 77**  | PCH DXE 初始化 (PCH 模組特定) |
+| **78**  | ACPI 模組初始化 |
+| **79**  | CSM 初始化 |
+| **7A – 7F**  | 保留供未來 AMI DXE 碼使用 |
 
-**Appendix**   
-(continued on the next page)
+**附錄**
+(續下頁)
 
-A-2 Appendix   
-**Q-Code table** 
+A-2 附錄
+**Q-Code 表**
 
-| Code |  Description |
+| 代碼 |  說明 |
 | :---- | :---- |
-| **90**  | Boot Device Selection (BDS) phase is started |
-| **91**  | Driver connecting is started |
-| **92**  | PCI Bus initialization is started |
-| **93**  | PCI Bus Hot Plug Controller Initialization |
-| **94**  | PCI Bus Enumeration |
-| **95**  | PCI Bus Request Resources |
-| **96**  | PCI Bus Assign Resources |
-| **97**  | Console Output devices connect |
-| **98**  | Console input devices connect |
-| **99**  | Super IO Initialization |
-| **9A**  | USB initialization is started |
-| **9B**  | USB Reset |
-| **9C**  | USB Detect |
-| **9D**  | USB Enable |
-| **9E – 9F**  | Reserved for future AMI codes |
-| **A0**  | IDE initialization is started |
-| **A1**  | IDE Reset |
-| **A2**  | IDE Detect |
-| **A3**  | IDE Enable |
-| **A4**  | SCSI initialization is started |
-| **A5**  | SCSI Reset |
-| **A6**  | SCSI Detect |
-| **A7**  | SCSI Enable |
-| **A8**  | Setup Verifying Password |
-| **A9**  | Start of Setup |
-| **AA**  | Reserved for ASL (see ASL Status Codes section below) |
-| **AB**  | Setup Input Wait |
-| **AC**  | Reserved for ASL (see ASL Status Codes section below) |
-| **AD**  | Ready To Boot event |
-| **AE**  | Legacy Boot event |
-| **AF**  | Exit Boot Services event |
-| **B0**  | Runtime Set Virtual Address MAP Begin |
-| **B1**  | Runtime Set Virtual Address MAP End |
-| **B2**  | Legacy Option ROM Initialization |
-| **B3**  | System Reset |
+| **90**  | 開機裝置選擇 (BDS) 階段已啟動 |
+| **91**  | 驅動程式連接已啟動 |
+| **92**  | PCI 匯流排初始化已啟動 |
+| **93**  | PCI 匯流排熱插拔控制器初始化 |
+| **94**  | PCI 匯流排列舉 |
+| **95**  | PCI 匯流排要求資源 |
+| **96**  | PCI 匯流排指派資源 |
+| **97**  | 主控台輸出裝置連接 |
+| **98**  | 主控台輸入裝置連接 |
+| **99**  | 超級 I/O 初始化 |
+| **9A**  | USB 初始化已啟動 |
+| **9B**  | USB 重設 |
+| **9C**  | USB 偵測 |
+| **9D**  | USB 啟用 |
+| **9E – 9F**  | 保留供未來 AMI 碼使用 |
+| **A0**  | IDE 初始化已啟動 |
+| **A1**  | IDE 重設 |
+| **A2**  | IDE 偵測 |
+| **A3**  | IDE 啟用 |
+| **A4**  | SCSI 初始化已啟動 |
+| **A5**  | SCSI 重設 |
+| **A6**  | SCSI 偵測 |
+| **A7**  | SCSI 啟用 |
+| **A8**  | 設定驗證密碼 |
+| **A9**  | 設定開始 |
+| **AA**  | 保留供 ASL 使用 (請參閱下方的 ASL 狀態碼部分) |
+| **AB**  | 設定輸入等待 |
+| **AC**  | 保留供 ASL 使用 (請參閱下方的 ASL 狀態碼部分) |
+| **AD**  | 準備開機事件 |
+| **AE**  | 傳統開機事件 |
+| **AF**  | 結束開機服務事件 |
+| **B0**  | 執行階段設定虛擬位址對應開始 |
+| **B1**  | 執行階段設定虛擬位址對應結束 |
+| **B2**  | 傳統選用 ROM 初始化 |
+| **B3**  | 系統重設 |
 
-**Appendix**   
-(continued on the next page)
+**附錄**
+(續下頁)
 
-Pro WS W680-ACE Series A-3   
-**Q-Code table** 
+Pro WS W680-ACE 系列 A-3
+**Q-Code 表**
 
-| Code |  Description |
+| 代碼 |  說明 |
 | :---- | :---- |
-| **B4**  | USB hot plug |
-| **B5**  | PCI bus hot plug |
-| **B6**  | Clean-up of NVRAM |
-| **B7**  | Configuration Reset (reset of NVRAM settings) |
-| **B8– BF**  | Reserved for future AMI codes |
-| **D0**  | CPU initialization error |
-| **D1**  | System Agent initialization error |
-| **D2**  | PCH initialization error |
-| **D3**  | Some of the Architectural Protocols are not available |
-| **D4**  | PCI resource allocation error. Out of Resources |
-| **D5**  | No Space for Legacy Option ROM |
-| **D6**  | No Console Output Devices are found |
-| **D7**  | No Console Input Devices are found |
-| **D8**  | Invalid password |
-| **D9**  | Error loading Boot Option (LoadImage returned error) |
-| **DA**  | Boot Option is failed (StartImage returned error) |
-| **DB**  | Flash update is failed |
-| **DC**  | Reset protocol is not available |
+| **B4**  | USB 熱插拔 |
+| **B5**  | PCI 匯流排熱插拔 |
+| **B6**  | 清除 NVRAM |
+| **B7**  | 組態重設 (重設 NVRAM 設定) |
+| **B8– BF**  | 保留供未來 AMI 碼使用 |
+| **D0**  | CPU 初始化錯誤 |
+| **D1**  | 系統代理程式初始化錯誤 |
+| **D2**  | PCH 初始化錯誤 |
+| **D3**  | 某些架構通訊協定不可用 |
+| **D4**  | PCI 資源配置錯誤。資源不足 |
+| **D5**  | 傳統選用 ROM 空間不足 |
+| **D6**  | 找不到主控台輸出裝置 |
+| **D7**  | 找不到主控台輸入裝置 |
+| **D8**  | 密碼無效 |
+| **D9**  | 載入開機選項時發生錯誤 (LoadImage 傳回錯誤) |
+| **DA**  | 開機選項失敗 (StartImage 傳回錯誤) |
+| **DB**  | 快閃更新失敗 |
+| **DC**  | 重設通訊協定不可用 |
 
-**ACPI/ASL Checkpoints (under OS)**
+**ACPI/ASL 檢查點 (在作業系統下)**
 
-| Code |  Description |
+| 代碼 |  說明 |
 | :---- | :---- |
-| **03**  | System is entering S3 sleep state |
-| **04**  | System is entering S4 sleep state |
-| **05**  | System is entering S5 sleep state |
-| **30**  | System is waking up from the S3 sleep state |
-| **40**  | System is waking up from the S4 sleep state |
-| **AC**  | System has transitioned into ACPI mode. Interrupt controller is in PIC mode. |
-| **AA**  | System has transitioned into ACPI mode. Interrupt controller is in APIC mode. |
+| **03**  | 系統正在進入 S3 睡眠狀態 |
+| **04**  | 系統正在進入 S4 睡眠狀態 |
+| **05**  | 系統正在進入 S5 睡眠狀態 |
+| **30**  | 系統正在從 S3 睡眠狀態喚醒 |
+| **40**  | 系統正在從 S4 睡眠狀態喚醒 |
+| **AC**  | 系統已轉換至 ACPI 模式。中斷控制器處於 PIC 模式。 |
+| **AA**  | 系統已轉換至 ACPI 模式。中斷控制器處於 APIC 模式。 |
 
-**Appendix** 
+**附錄**
 
-A-4 Appendix   
-**Notices** 
+A-4 附錄
+**注意事項**
 
-**FCC Compliance Information** 
+**FCC 符合性資訊**
 
-Responsible Party: Asus Computer International 
+責任方：華碩電腦國際公司
 
-Address: 48720 Kato Rd., Fremont, CA 94538, USA 
+地址：48720 Kato Rd., Fremont, CA 94538, USA
 
-Phone / Fax No: (510)739-3777 / (510)608-4555 
+電話/傳真號碼：(510)739-3777 / (510)608-4555
 
-This device complies with part 15 of the FCC Rules. Operation is subject to the following  two conditions: (1) This device may not cause harmful interference, and (2) this device must  accept any interference received, including interference that may cause undesired operation. This equipment has been tested and found to comply with the limits for a Class B digital  device, pursuant to part 15 of the FCC Rules. These limits are designed to provide  reasonable protection against harmful interference in a residential installation. This  equipment generates, uses and can radiate radio frequency energy and, if not installed  and used in accordance with the instructions, may cause harmful interference to radio  communications. However, there is no guarantee that interference will not occur in a  particular installation. If this equipment does cause harmful interference to radio or television  reception, which can be determined by turning the equipment off and on, the user is  encouraged to try to correct the interference by one or more of the following measures:  ---- Reorient or relocate the receiving antenna. 
+本裝置符合 FCC 規則第 15 部分。操作受以下兩個條件約束：(1) 本裝置不得造成有害干擾，且 (2) 本裝置必須接受收到的任何干擾，包括可能導致意外操作的干擾。 本設備經測試證明符合 FCC 規則第 15 部分對 B 類數位裝置的限制。這些限制旨在提供合理的保護，以防止在住宅安裝中產生有害干擾。本設備會產生、使用並可能散發射頻能量，如果未按照說明進行安裝和使用，可能會對無線電通訊造成有害干擾。但是，不保證在特定安裝中不會發生干擾。如果本設備確實對無線電或電視接收造成有害干擾（可透過關閉和開啟設備來確定），鼓勵使用者嘗試透過以下一種或多種措施來糾正干擾： ---- 重新調整或重新安置接收天線。
 
- ---- Increase the separation between the equipment and receiver. 
+ ---- 增加設備與接收器之間的距離。
 
- ---- Connect the equipment into an outlet on a circuit different from that to which the receiver  is connected. 
+ ---- 將設備連接到與接收器連接的電路不同的電路上的插座。
 
- ---- Consult the dealer or an experienced radio/TV technician for help. 
+ ---- 請諮詢經銷商或有經驗的無線電/電視技術人員尋求協助。
 
-**HDMI Compliance Statement** 
+**HDMI 符合性聲明**
 
-The terms HDMI, HDMI High-Definition Multimedia Interface, and the HDMI Logo are  trademarks or registered trademarks of HDMI Licensing Administrator, Inc.
+HDMI、HDMI 高畫質多媒體介面和 HDMI 標誌是 HDMI Licensing Administrator, Inc. 的商標或註冊商標。
 
-**Appendix** 
+**附錄**
 
-Pro WS W680-ACE Series A-5   
-**Compliance Statement of Innovation, Science and Economic  Development Canada (ISED)** 
+Pro WS W680-ACE 系列 A-5
+**加拿大創新、科學與經濟發展部 (ISED) 合規聲明**
 
-This device complies with Innovation, Science and Economic Development Canada licence  exempt RSS standard(s). Operation is subject to the following two conditions: (1) this device  may not cause interference, and (2) this device must accept any interference, including  interference that may cause undesired operation of the device. 
+本裝置符合加拿大創新、科學與經濟發展部的免授權 RSS 標準。操作受以下兩個條件約束：(1) 本裝置不得造成干擾，且 (2) 本裝置必須接受任何干擾，包括可能導致裝置意外操作的干擾。
 
 CAN ICES-003(B)/NMB-003(B) 
 
-**Déclaration de conformité de Innovation, Sciences et**    
-**Développement économique Canada (ISED)** 
+**加拿大創新、科學與經濟發展部 (ISED) 符合性聲明**
 
-Le présent appareil est conforme aux CNR d’Innovation, Sciences et Développement  économique Canada applicables aux appareils radio exempts de licence. L’exploitation est  autorisée aux deux conditions suivantes : (1) l’appareil ne doit pas produire de brouillage,  et (2) l’utilisateur de l’appareil doit accepter tout brouillage radioélectrique subi, même si le  brouillage est susceptible d’en compromettre le fonctionnement. 
+本裝置符合加拿大創新、科學與經濟發展部適用於免授權無線電裝置的 CNR。操作受以下兩個條件約束：(1) 裝置不得產生干擾，且 (2) 裝置使用者必須接受任何遭受的無線電干擾，即使干擾可能影響其運作。
 
-CAN ICES-003(B)/NMB-003(B) 
+CAN ICES-003(B)/NMB-003(B)
