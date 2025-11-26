@@ -1,0 +1,21 @@
+# Environment files
+.env
+*.pem
+# Temporary files
+/tmp/
+*.tmp
+*.temp
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# BIOS 設置
+bios-setting
